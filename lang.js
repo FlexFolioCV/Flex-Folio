@@ -1,0 +1,68 @@
+let currentLang = 'el';
+
+function safeSetText(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = text;
+}
+
+function safeSetPlaceholder(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.placeholder = text;
+}
+
+async function setLanguage(lang) {
+  currentLang = lang;
+
+  try {
+    const res = await fetch('lang.json');
+    const translations = await res.json();
+    const t = translations[lang];
+
+    // Ενημέρωση περιεχομένου (με έλεγχο ασφαλείας)
+    document.querySelector('header h1').textContent = t.title;
+    document.querySelector('header p').textContent = t.subtitle;
+    document.querySelector('#how-it-works h2').textContent = t.how_it_works;
+    document.querySelector('#how-it-works p').textContent = t.how_it_works_desc;
+    document.querySelector('#templates h2').textContent = t.select_template;
+    document.querySelector('#selectedDisplay').textContent = t.no_template;
+    document.querySelector('#form h2').textContent = t.form_title;
+    document.querySelector('#orderForm button').textContent = t.submit;
+
+    safeSetText("chatbot-header", t.chatbot_header);
+    safeSetText("chatbot-title", t.chatbot_title);
+    safeSetText("chatbot-msg", t.chatbot_msg);
+    safeSetText("chatbot-open", t.chatbot_open);
+    safeSetText("chatbot-yes", t.chatbot_yes);
+    safeSetText("nav-templates", t.nav_templates);
+    safeSetText("nav-pricing", t.nav_pricing);
+    safeSetText("nav-form", t.nav_form);
+
+    safeSetPlaceholder("form-name", t.form_name);
+    safeSetPlaceholder("form-email", t.form_email);
+    safeSetPlaceholder("form-age", t.form_age);
+    safeSetPlaceholder("form-bio", t.form_bio);
+    safeSetPlaceholder("form-purpose", t.form_purpose);
+    safeSetText("form-submit", t.form_submit);
+
+    // Όλα τα buttons επιλογής
+    document.querySelectorAll(".choose-btn").forEach(btn => {
+      btn.textContent = t.choose;
+    });
+
+  } catch (err) {
+    console.error("⚠️ Σφάλμα στη φόρτωση μεταφράσεων:", err);
+  }
+}
+
+
+// 🔁 Συνάρτηση που συνδέεται με το toggle input
+function toggleLanguage() {
+  const checkbox = document.getElementById('langSwitch');
+  const lang = checkbox.checked ? 'en' : 'el';
+  setLanguage(lang);
+}
+
+// 🌐 Φόρτωσε αρχικά ελληνικά
+document.addEventListener('DOMContentLoaded', () => {
+  setLanguage('el');
+});

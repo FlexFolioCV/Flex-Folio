@@ -1,0 +1,185 @@
+{
+    "en": {
+      
+      "name": "George Christopoulos",
+      "typed_intro": "I'm",
+      "typed_items": [
+        "Computer Science Graduate",
+        "Android Developer in progress",
+        "Guitar Player"
+      ],
+      "title": "Computer Science Graduate, Android Developer in progress, Guitar Player",
+      "summary": "Computer Science graduate passionate about Android and Web development.",
+      "home_section_title": "Home",
+
+
+
+      "//": "----  About Section  ----",
+      "about_section_title": "About",
+      "about_text1": "I am a <strong>Computer Science graduate</strong> who enjoys building <strong>Android apps</strong>. I have experience with <strong>Java</strong>, <strong>Kotlin</strong>, and tools like <strong>Firebase</strong> and <strong>Room Database</strong>. On the <strong>web development side</strong>, I work with technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm interested in learning <strong>Flutter</strong>. I like creating <strong>simple</strong> and <strong>smooth user experiences</strong>.",
+      "about_head2": "Computer Science Graduate",
+      "about_text2": "During my studies at the <strong>University of Piraeus</strong>, I worked on several projects, including my thesis, \"<strong>Chords App</strong>\" — a mobile app that helps users find guitar chords for their favorite songs. This project used modern Android tools like <strong>Jetpack Compose</strong> and <strong>Firebase</strong>, showing my ability to build <strong>simple</strong> and <strong>efficient mobile apps</strong>.",
+      "birthday_label": "</strong>Birthday:</strong>",
+      "degree_label": "</strong>Degree:</strong>",
+      "city_label": "</strong>City:</strong>",
+      "status_label": "</strong>Current Status:</strong>",
+      "city_text":"Piraeus, Greece" ,
+      "degree_text":"Bachelor in Computer Science",
+      "status_text": "Senior year",
+      "about_text3":"I am passionate about building <strong>fast</strong> and <strong>easy-to-use mobile apps</strong> and <strong>web pages</strong>.I’m always looking for ways to improve my <strong>coding skills</strong> and learn new things.I enjoy working in <strong>dynamic environments</strong> where I can solve problems and grow as a developer and as a person.",
+      "about_text4":"When I'm not coding, I enjoy playing the guitar, cycling and watching movies.",
+
+
+      "//": "----  Skills Section  ----",
+      "skills_section_title": "Skills",
+      "programming_languages":"💻 Programming Languages",
+      "databasestools":"🗄️ Databases & Tools",
+      "frameworkslibraries":"Frameworks & Libraries",
+      "other_skills_title": "💬 Soft Skills",
+      "skill_teamwork": "Teamwork",
+      "skill_communication": "Communication",
+      "skill_version_control": "Version Control",
+      "skill_creativity": "Creativity",
+      "skill_responsibility": "Responsibility",
+      "skill_learning": "Continuous Learning",
+
+
+      "//": "----  Resume Section  ----",
+      "resume_section_title": "Resume",
+      "resume_summary_title": "Summary",
+      "resume_summary": "<em>Passionate about technology, I’m a <strong>Computer Science graduate</strong> with hands-on experience in <strong>Android development</strong>. I’ve worked with <strong>Java</strong>, <strong>Kotlin</strong>, and <strong>Firebase</strong> to build clean and functional mobile apps. Also experienced in <strong>web development</strong> using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. I’m always ready to learn, improve, and collaborate on exciting projects.</em>",
+      "resume_bullet1": "🚀 Passionate about clean code, testing, and performance",
+      "resume_bullet2": "📱Planning to publish my first Android app (Thesis) on Google Play soon.",
+      "education_title": "Education",
+      "education_degree": "BSc in Computer Science",
+      "education_school": "<em>Department of Informatics, University of Piraeus (Very Good)</em>",
+      "education_focus": "Focused on Android Development and Software Engineering. Key Technologies: Java, C#, Kotlin, SQL, Firebase, Room Database, Jetpack Compose, Git, HTML/CSS, JavaScript, and cloud services like Firebase.",
+      "education_extra": "Studies began during the COVID-19 pandemic, building flexibility and self-learning skills.",
+      "experience_title": "Experience",
+      "experience_role": "Android Developer (Thesis Project)",
+      "experience_place": "<em>University of Piraeus, Piraeus, Greece</em>",
+      "experience_task1": "Designed and developed the <strong>Chords App</strong> using <strong>Kotlin</strong> and <strong>Jetpack Compose</strong>.",
+      "experience_task2": "Implemented dynamic UI components to enhance user experience and usability.",
+      "experience_task3": "Integrated <strong>Firebase</strong> for user authentication and data storage.",
+      "experience_task4": "Utilized <strong>Room Database</strong> to manage offline data efficiently.",
+      "experience_barista_role": "Barista (Summer Seasons)",
+      "experience_barista_place": "<em>Local Coffee & Brunch House, Kalamata, Greece</em>",
+      "experience_barista_task1": "Got comfortable talking to all kinds of customers.",
+      "experience_barista_task2": "Handled multiple orders at once without losing track.",
+      "experience_barista_task3": "Worked closely with teammates to keep things moving smoothly during busy hours.",
+      "filter_all": "All",
+      "filter_personal": "Personal Projects",
+      "filter_team": "Team Projects",
+
+
+
+
+
+
+      "portfolio_section_title": "Portfolio",
+      "contact_section_title": "Contact",
+      "contact_address_title": "Address",
+      "contact_phone_title": "Call Me",
+      "contact_email_title": "Email",
+      "contact_telegram_text": "Chat on Telegram",
+      "contact_github_text": "Check My Projects",
+      "contact_linkedin_text": "Find me on LinkedIn"
+
+
+    },
+
+
+
+
+
+    "gr": {
+      "name": "Γιώργος Χριστόπουλος",
+      "typed_intro": "Είμαι",
+      "typed_items": [
+        "απόφοιτος Πληροφορικής",
+        "επίδοξος Android Developer",
+        "κιθαρίστας"
+      ],
+      "title": "Μηχανικός Λογισμικού",
+      "summary": "Απόφοιτος Πληροφορικής με πάθος για Android και Web development.",
+      "home_section_title": "Αρχική",
+
+
+      "//": "----  About Section  ----",
+      "about_section_title": "Προφίλ",
+      "about_text1": "Είμαι απόφοιτος Πληροφορικής με ιδιαίτερο ενδιαφέρον για την ανάπτυξη εφαρμογών Android. Έχω εργαστεί με τεχνολογίες όπως <strong>Java</strong>, <strong>Kotlin</strong>, <strong>Firebase</strong> και <strong>Room Database</strong>. Παράλληλα, έχω εμπειρία και στον χώρο του <strong>web development</strong>, με χρήση <strong>HTML</strong>, <strong>CSS</strong> και <strong>JavaScript</strong>. Τελευταία, με ενδιαφέρει και η <strong>εκμάθηση του Flutter</strong>. Στόχος μου είναι να σχεδιάζω <strong>καθαρά</strong> και <strong>φιλικά προς τον χρήστη</strong> συστήματα.",
+      "about_head2": "Απόφοιτος του Τμήματος Πληροφορικής",
+      "about_text2": "Κατά τη διάρκεια των σπουδών μου στο <strong>Πανεπιστήμιο Πειραιώς</strong>, συμμετείχα σε αρκετές <a href=\"#portfolio\" class=\"text-link\">εργασίες</a>. Η πτυχιακή μου, με τίτλο \"<strong>Chords App</strong>\", είναι μια mobile εφαρμογή που βοηθά τους χρήστες να βρίσκουν συγχορδίες για τα αγαπημένα τους τραγούδια. Χρησιμοποίησα εργαλεία όπως το <strong>Jetpack Compose</strong> και το <strong>Firebase</strong>, δείχνοντας έτσι την ικανότητά μου να σχεδιάζω <strong>λειτουργικές</strong> και <strong>αποτελεσματικές εφαρμογές</strong>.",
+      "birthday_label": "</strong>Έτος Γέννησης:</strong>",
+      "degree_label": "</strong>Βεβαίωση:</strong>",
+      "city_label": "</strong>Κατοικία:</strong>",
+      "status_label": "</strong>Κατάσταση:</strong>",
+      "city_text":"Πειραιάς, Ελλάδα" ,
+      "degree_text":"Πτυχίο Πληροφορικής",
+      "status_text": "Αναζήτηση εργασίας",
+      "about_text3": "Ασχολούμαι με την ανάπτυξη <strong>γρήγορων</strong> και <strong>εύχρηστων εφαρμογών</strong> για κινητά και ιστοσελίδες. Με ενδιαφέρει διαρκώς η εξέλιξη των <strong>προγραμματιστικών μου δεξιοτήτων</strong> και η απόκτηση νέας γνώσης. Προτιμώ να εργάζομαι σε <strong>προκλητικά περιβάλλοντα</strong>, όπου μπορώ να βελτιώνομαι και ως προγραμματιστής και ως άνθρωπος.",
+      "about_text4": "Στον ελεύθερο χρόνο μου, μου αρέσει να παίζω κιθάρα, να κάνω ποδήλατο και να παρακολουθώ ταινίες.",
+
+
+
+      "//": "----  Skills Section  ----",
+      "skills_section_title": "Δεξιότητες",
+      "programming_languages":"💻 Γλώσσες Προγραμματισμού",
+      "databasestools":"🗄️ Βάσεις δεδομένων & Εργαλεία",
+      "frameworkslibraries":"Frameworks & Βιβλιοθήκες",
+      "other_skills_title": "💬 Λοιπές Δεξιότητες",
+      "skill_teamwork": "Ομαδικό Πνεύμα",
+      "skill_communication": "Επικοινωνία",
+      "skill_version_control": "Έλεγχος Εκδόσεων",
+      "skill_creativity": "Δημιουργικότητα",
+      "skill_responsibility": "Υπευθυνότητα",
+      "skill_learning": "Διαρκής Μάθηση",
+
+
+
+
+      "//": "----  Resume Section  ----",
+      "resume_section_title": "Βιογραφικό",
+      "resume_summary_title": "Σύνοψη",
+      "resume_summary": "<em>Με πάθος για την τεχνολογία, είμαι <strong>απόφοιτος Πληροφορικής</strong> με πρακτική εμπειρία στην <strong>ανάπτυξη Android εφαρμογών</strong>. Έχω χρησιμοποιήσει <strong>Java</strong>, <strong>Kotlin</strong> και <strong>Firebase</strong> για τη δημιουργία καθαρών και λειτουργικών mobile apps. Διαθέτω επίσης εμπειρία στο <strong>web development</strong> με χρήση <strong>HTML</strong>, <strong>CSS</strong> και <strong>JavaScript</strong>. Μου αρέσει να μαθαίνω συνεχώς, να εξελίσσομαι και να συνεργάζομαι σε δημιουργικά έργα.</em>",
+      "resume_bullet1": "🚀 Με ενδιαφέρει ιδιαίτερα ο καθαρός κώδικας, οι δοκιμές και η απόδοση των εφαρμογών",
+      "resume_bullet2": "📱Σκοπεύω να δημοσιεύσω σύντομα την πρώτη μου Android εφαρμογή (πτυχιακή εργασία) στο Google Play",
+      "education_title": "Σπουδές",
+      "education_degree": "Πτυχιο Πληροφορικης",
+      "education_school": "<em>Τμήμα Πληροφορικής, Πανεπιστήμιο Πειραιώς (Λίαν Καλώς)</em>",
+      "education_focus": "Εξειδίκευση στην ανάπτυξη Android εφαρμογών και Μηχανική Λογισμικού. Κύριες τεχνολογίες: Java, C#, Kotlin, SQL, Firebase, Room Database, Jetpack Compose, Git, HTML/CSS, JavaScript και cloud υπηρεσίες όπως το Firebase.",
+      "education_extra": "Οι σπουδές ξεκίνησαν εν μέσω της πανδημίας COVID-19, ενισχύοντας την προσαρμοστικότητα και την ικανότητα αυτομάθησης.",
+      "experience_title": "Επαγγελματική Εμπειρία",
+      "experience_role": "Android Developer (Πτυχιακη εργασια)",
+      "experience_place": "<em>Πανεπιστήμιο Πειραιώς, Πειραιάς</em>",
+      "experience_task1": "Σχεδίασα και ανέπτυξα την εφαρμογή <strong>Chords App</strong> χρησιμοποιώντας <strong>Kotlin</strong> και <strong>Jetpack Compose</strong>.",
+      "experience_task2": "Υλοποίησα δυναμικά στοιχεία UI για βελτίωση της εμπειρίας και ευχρηστίας.",
+      "experience_task3": "Ενσωμάτωσα το <strong>Firebase</strong> για έλεγχο ταυτότητας και αποθήκευση δεδομένων.",
+      "experience_task4": "Χρησιμοποίησα <strong>Room Database</strong> για αποτελεσματική διαχείριση offline δεδομένων.",
+      "experience_barista_role": "Barista (Καλοκαιρινες Σεζον)",
+      "experience_barista_place": "<em>Local Coffee & Brunch House, Καλαμάτα</em>",
+      "experience_barista_task1": "Απέκτησα ευχέρεια στην εξυπηρέτηση πελατών κάθε ηλικίας και προφίλ.",
+      "experience_barista_task2": "Διαχειριζόμουν πολλαπλές παραγγελίες ταυτόχρονα με ακρίβεια.",
+      "experience_barista_task3": "Συνεργαζόμουν αποτελεσματικά με την ομάδα σε ώρες αιχμής για ομαλή ροή.",
+      "filter_all": "Όλα",
+      "filter_personal": "Προσωπικά Έργα",
+      "filter_team": "Ομαδικά Έργα",
+
+
+
+
+
+      "portfolio_section_title": "Έργα",
+      "contact_section_title": "Επικοινωνία",
+      "contact_address_title": "Διεύθυνση",
+      "contact_phone_title": "Τηλέφωνο",
+      "contact_email_title": "Email",
+      "contact_telegram_text": "Επικοινωνήστε μαζί μου στο Telegram",
+      "contact_github_text": "Δείτε τα projects μου",
+      "contact_linkedin_text": "Βρείτε με στο LinkedIn"
+
+
+
+    }
+  }
+  

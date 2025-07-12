@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <title>George Christopoulos</title>
+  <meta name="description" content="I am a Computer Science graduate and Android Developer. Check my projects and feel free to contact me!">
+  <meta name="keywords" content="George Christopoulos, Android Developer, Kotlin, Java, Firestore, Jetpack Compose, Portfolio, Software Engineer">
+  <meta name="author" content="George Christopoulos">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.georgioschristopoulos.info">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:title" content="George Christopoulos | Android Developer">
+  <meta property="og:description" content="I am a Computer Science graduate and Android Developer. Check my projects and feel free to contact me!">
+  <meta property="og:url" content="https://www.georgioschristopoulos.info">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:image" content="https://www.georgioschristopoulos.info/assets/img/programming.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="George Christopoulos | Android Developer">
+  <meta name="twitter:description" content="I am a Computer Science graduate and Android Developer. Check my projects and feel free to contact me!">
+  <meta name="twitter:url" content="https://www.georgioschristopoulos.info">
+  <meta name="twitter:image" content="https://www.georgioschristopoulos.info/assets/img/programming.png">
+
+  <!-- Favicons -->
+  <link href="assets/img/programming.png" rel="icon">
+  <link href="assets/img/programming.png" rel="apple-touch-icon">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Poppins:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+
+<!-- Isotope.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <!--<button class="secretButton" onclick="window.location.href='resume-bootstrap4-master/index.html'">
+          Secret
+        </button>-->
+        <li>
+          <a href="#hero" class="active">
+            <i class="bi bi-house navicon"></i>
+            <span data-i18n="home_section_title">Home</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#about">
+            <i class="bi bi-person navicon"></i>
+            <span data-i18n="about_section_title">About</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#skills">
+            <i class="bi bi-tools navicon"></i>
+            <span data-i18n="skills_section_title">Skills</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#resume">
+            <i class="bi bi-file-earmark-text navicon"></i>
+            <span data-i18n="resume_section_title">Resume</span>
+          </a>
+        </li>
+        
+        <a href="#portfolio">
+          <i class="bi bi-collection navicon"></i>
+          <span data-i18n="portfolio_section_title">Portfolio</span>
+        </a>
+        
+        
+        <li class="dropdown">
+          <a href="#contact" class="d-flex align-items-center justify-content-between">
+            <span>
+              <i class="bi bi-envelope navicon"></i>
+              <span data-i18n="contact_section_title">Contact</span>
+            </span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="https://t.me/Georgechrp" target="_blank">
+                <i class="bi bi-telegram navicon"></i> Telegram
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Georgechrp" target="_blank">
+                <i class="bi bi-github navicon"></i> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/georgechrp" target="_blank">
+                <i class="bi bi-linkedin navicon"></i> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </li>
+        
+        
+      </ul>
+      
+    </nav>
+    <div class="lang-toggle-wrapper fixed-lang-toggle" >
+      <span class="lang-label">GR</span>
+      <label class="lang-switch">
+        <input type="checkbox" id="lang-toggle-global">
+        <span class="lang-slider"></span>
+      </label>
+      <span class="lang-label">EN</span>
+    </div>
+
+    
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/backgroundsetup.jpg" alt="" data-aos="fade-in" class="">
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2 data-i18n="name">George Christopoulos</h2>
+        <p>
+          <span data-i18n="typed_intro">I'm</span> <span class="typed" id="typed"></span>
+        </p>
+      </div>
+      
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="about_section_title">About</h2>
+        <p data-i18n-html="about_text1">
+          I am a <strong>Computer Science graduate</strong> who enjoys building <strong>Android apps</strong>.
+          I have experience with <strong>Java</strong>, <strong>Kotlin</strong>, and tools like <strong>Firebase</strong> and <strong>Room Database</strong>.
+          On the <strong>web development side</strong>, I work with technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm interested in learning <strong>Flutter</strong>.
+          I like creating <strong>simple</strong> and <strong>smooth user experiences</strong>.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.JPG" alt="" class="img-fluid rounded-circle">
+           <!--<img src="assets/img/my-new-profile-img.PNG" alt="" class="img-fluid rounded-circle">-->
+          </div>
+          <div class="col-lg-8 content">
+            <h2 data-i18n="about_head2">Computer Science Graduate</h2>
+            <p class="fst-italic py-3" data-i18n-html="about_text2">
+              
+             
+              During my studies at the <strong>University of Piraeus</strong>, I worked on several projects,
+              including my thesis, "<strong>Chords App</strong>" — a mobile app that helps users find guitar chords for their favorite songs.
+              This project used modern Android tools like <strong>Jetpack Compose</strong> and <strong>Firebase</strong>,
+              showing my ability to build <strong>simple</strong> and <strong>efficient mobile apps</strong>.
+            
+ 
+
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong data-i18n-html="birthday_label">Birthday:</strong> 
+                    <span >2002</span>
+                  </li>
+            
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong data-i18n-html="city_label">City:</strong> 
+                    <span data-i18n-html="city_text">Piraeus, Greece</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong data-i18n-html="degree_label">Degree:</strong> 
+                    <span data-i18n-html="degree_text">Bachelor in Computer Science</span>
+                  </li>
+            
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong data-i18n-html="status_label">Current Status:</strong> 
+                    <span data-i18n-html="status_text">Senior year</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <p class="py-3" data-i18n-html="about_text3">
+              I am passionate about building <strong>fast</strong> and <strong>easy-to-use mobile apps</strong> and <strong>web pages</strong>.
+I’m always looking for ways to improve my <strong>coding skills</strong> and learn new things.
+I enjoy working in <strong>dynamic environments</strong> where I can solve problems and grow as a developer and as a person.
+          </p>
+          
+ <p data-i18n-html="about_text4">
+        When I'm not coding, I enjoy playing the guitar, cycling and watching movies.
+    </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    
+    <!-- Stats Section 
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+
+       <!-- <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>University Projects</strong> <span></span></p>
+            </div>
+          </div> End Stats Item 
+
+
+        </div>
+
+      </div>
+
+    </section> /Stats Section --> 
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills section light-background" >
+  <div class="container section-title" data-aos="fade-up">
+      <h2 data-i18n="skills_section_title">Skills</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+      <div class="row skills-content">
+
+          <!-- Left Column -->
+          <div class="col-lg-3" data-aos="fade-up">
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action active" data-i18n-html="programming_languages">💻 Programming Languages</a>
+                <a class="list-group-item list-group-item-action disabled"> Java</a>
+                <a class="list-group-item list-group-item-action disabled"> Kotlin</a>
+                <a class="list-group-item list-group-item-action disabled"> C#</a>
+                <a class="list-group-item list-group-item-action disabled"> Python</a>
+                <a class="list-group-item list-group-item-action disabled"> JavaScript</a>
+                <a class="list-group-item list-group-item-action disabled"> HTML</a>
+                
+              </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-3" data-aos="fade-up">
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action active" data-i18n-html="databasestools">🗄️ Databases & Tools</a>
+                <a class="list-group-item list-group-item-action disabled"> Firebase</a>
+                <a class="list-group-item list-group-item-action disabled"> SQL</a>
+                <a class="list-group-item list-group-item-action disabled"> Room Database</a>
+                <a class="list-group-item list-group-item-action disabled"> IntelliJ IDEA</a>
+                <a class="list-group-item list-group-item-action disabled"> PyCharm</a>
+                <a class="list-group-item list-group-item-action disabled"> Git</a> 
+              </div>
+          </div>
+
+          <!-- Third Column -->
+          <div class="col-lg-3" data-aos="fade-up">
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action active" data-i18n-html="frameworkslibraries">📚 Frameworks & Libraries</a>
+                <a class="list-group-item list-group-item-action disabled"> Jetpack Compose</a>
+                <a class="list-group-item list-group-item-action disabled"> Navigation Component</a>
+                <a class="list-group-item list-group-item-action disabled"> LiveData</a>
+                <a class="list-group-item list-group-item-action disabled"> Coroutines</a>
+                <a class="list-group-item list-group-item-action disabled"> NumPy</a>
+                <a class="list-group-item list-group-item-action disabled"> Matplotlib</a>
+                
+              </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up">
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action active" data-i18n-html="other_skills_title">💬 Soft Skills</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_teamwork">Teamwork</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_communication">Communication</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_version_control">Version Control</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_creativity">Creativity</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_responsibility">Responsibility</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_learning">Continuous Learning</a>
+
+            </div>
+        </div>
+        
+
+      </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="resume_section_title">Resume</h2>
+      
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+         
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="resume-title" data-i18n="resume_summary_title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4 data-i18n="name">Georgios Christopoulos</h4>
+              <p data-i18n-html="resume_summary">
+                <em>
+                  Passionate about technology, I’m a <strong>Computer Science graduate</strong> with hands-on experience in 
+                  <strong>Android development</strong>. I’ve worked with <strong>Java</strong>, <strong>Kotlin</strong>, and 
+                  <strong>Firebase</strong> to build clean and functional mobile apps. Also experienced in <strong>web development</strong> 
+                  using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. I’m always ready to learn, improve, 
+                  and collaborate on exciting projects.
+                </em>
+              </p>
+            
+    
+              <ul>
+                <li data-i18n="resume_bullet1">🚀 Passionate about clean code, testing, and performance</li>
+                <li data-i18n="resume_bullet2">📱Planning to publish my first Android app (Thesis) on Google Play soon.</li>
+              </ul>
+              
+</div>
+<!-- Edn Resume Item -->
+
+      <h3 class="resume-title" data-i18n="education_title">Education</h3>
+
+      <div class="resume-item">
+        <h4 data-i18n="education_degree">BSc in Computer Science</h4>
+        <h5>2020 - 2025</h5>
+        <p data-i18n-html="education_school"><em>Department of Informatics, University of Piraeus (Very Good)</em></p>
+        <p data-i18n="education_focus">
+          Focused on Android Development and Software Engineering. Key Technologies: Java, C#, Kotlin, SQL, Firebase, Room Database, Jetpack Compose, Git, HTML/CSS, JavaScript, and cloud services like Firebase.
+        </p>
+        <p data-i18n="education_extra">
+          Studies began during the COVID-19 pandemic, building flexibility and self-learning skills.
+        </p>
+      </div>
+      <!-- Edn Resume Item -->
+
+      
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title" data-i18n="experience_title">Experience</h3>
+          
+            <div class="resume-item">
+              <h4 data-i18n="experience_role">Android Developer (Thesis Project)</h4>
+              <h5>Jan 2025 - Present</h5>
+              <p data-i18n-html="experience_place"><em>University of Piraeus, Piraeus, Greece</em></p>
+              <ul>
+                <li data-i18n-html="experience_task1">Designed and developed the <strong>Chords App</strong> using <strong>Kotlin</strong> and <strong>Jetpack Compose</strong>.</li>
+                <li data-i18n="experience_task2">Implemented dynamic UI components to enhance user experience and usability.</li>
+                <li data-i18n-html="experience_task3">Integrated <strong>Firebase</strong> for user authentication and data storage.</li>
+                <li data-i18n-html="experience_task4">Utilized <strong>Room Database</strong> to manage offline data efficiently.</li>
+              </ul>
+            </div>
+
+          <!-- End Resume Item -->
+
+          <div class="resume-item">
+            <h4 data-i18n="experience_barista_role">Barista (Summer Seasons)</h4>
+            <h5>2021 - 2023</h5>
+            <p data-i18n-html="experience_barista_place"><em>Local Coffee & Brunch House, Kalamata, Greece</em></p>
+            <ul>
+              <li data-i18n="experience_barista_task1">Got comfortable talking to all kinds of customers.</li>
+              <li data-i18n="experience_barista_task2">Handled multiple orders at once without losing track.</li>
+              <li data-i18n="experience_barista_task3">Worked closely with teammates to keep things moving smoothly during busy hours.</li>
+            </ul>
+          </div>
+          <!-- End Resume Item -->
+</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <section id="portfolio" class="portfolio section light-background">
+      <div class="container section-title" data-aos="fade-up">
+          <h2 data-i18n="portfolio_section_title">Portfolio</h2>
+      </div><!-- End Section Title -->
+  
+      <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+  
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active" data-i18n="filter_all">All</li>
+              <li data-filter=".personal" data-i18n="filter_personal">Personal Projects</li>
+              <li data-filter=".team" data-i18n="filter_team">Team Projects</li>
+              
+          </ul>
+          
+          
+  
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+  
+                  <!-- Android App Project -->
+                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+
+                    <a href="https://github.com/Georgechrp/ChordsHub-Android-App" target="_blank" class="portfolio-box">
+                        <i class="fa-brands fa-android"></i>
+                        <h4>Android App(Thesis)</h4>
+                        <span > Kotlin, Jetpack Compose</span>
+                    </a>
+                </div>
+  
+                
+
+              <!-- Web Development Project -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item team">
+                  <a href="https://github.com/Georgechrp/MobileAccountManagement1-2024" target="_blank" class="portfolio-box">
+                      <i class="fa-solid fa-globe"></i>
+                      <h4>Web Page</h4>
+                      <span > Java</span>
+                  </a>
+              </div>
+
+              <!-- Multimedia system Project -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+                <a href="https://github.com/Georgechrp/Multimedia-Systems-Project-2024" target="_blank" class="portfolio-box">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h4>Multimedia Systems</h4>
+                    <span > Python</span>
+                </a>
+            </div>
+
+              <!-- Bioinformatics Project -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item team">
+                <a href="https://github.com/Georgechrp/Bioinformatics-2024" target="_blank" class="portfolio-box">
+                    <i class="fa-solid fa-dna"></i>
+                    <h4>Bioinformatics</h4>
+                    <span > Python</span>
+                </a>
+              </div>
+
+            <!-- Android 1 Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+              <a href="https://github.com/Georgechrp/UnipiPLIShopping" target="_blank" class="portfolio-box">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <h4>E - shop(Android)</h4>
+                  <span > Java, XML</span>
+              </a>
+          </div>
+
+          <!-- Android 2 Project -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+            <a href="https://github.com/Georgechrp/Unipi-Audio-Stories" target="_blank" class="portfolio-box">
+                <i class="fa-solid fa-headphones"></i>
+                <h4>Audio Stories(Android)</h4>
+                <span > Java, XML</span>
+            </a>
+        </div>
+
+      
+
+       <!-- Video Clips 2 Project -->
+       <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+        <a href="https://github.com/Georgechrp/VideoClips-2024" target="_blank" class="portfolio-box">
+            <i class="fa-solid fa-play"></i>
+            <h4>Video Clips</h4>
+            <span > C#</span>
+        </a>
+    </div>
+
+    <!-- Playlists Project -->
+    <div class="col-lg-4 col-md-6 portfolio-item isotope-item team">
+      <a href="https://github.com/Georgechrp/Playlist-with-cpp-2024" target="_blank" class="portfolio-box">
+          <i class="bi bi-music-note-list"></i>
+          <h4>Video Clips</h4>
+          <span > C++</span>
+      </a>
+  </div>
+
+   <!-- Databases Project -->
+   <div class="col-lg-4 col-md-6 portfolio-item isotope-item team">
+    <a href="https://github.com/Georgechrp/Databases-2024" target="_blank" class="portfolio-box">
+        <i class="fa-solid fa-table"></i>
+        <h4>Databases</h4>
+        <span > SQL<span>
+    </a>
+</div>
+
+  
+              </div><!-- End Portfolio Container -->
+          </div>
+      </div>
+  </section>
+  
+  
+
+    
+
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+     <!-- Section Title -->
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="row gy-4">
+
+    <!-- Αριστερά -->
+    <div class="col-lg-5">
+      <div class="info-wrap">
+
+        <!-- Address -->
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://www.google.com/maps?q=Kaminia+Piraeus" target="_blank" style="margin-right: 10px;">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+          </a>
+          <div>
+            <h3 data-i18n="contact_address_title">Address</h3>
+            <a href="https://www.google.com/maps?q=Kaminia+Piraeus" >Kaminia, Piraeus</a>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <a href="tel:+306939591915" style="margin-right: 10px;">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+          </a>
+          <div>
+            <h3 data-i18n="contact_phone_title">Call Me</h3>
+            <a href="tel:+306939591915">+30 6939591915</a>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <a href="mailto:christopoulosg2@gmail.com" style="margin-right: 10px;">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+          </a>
+          <div>
+            <h3 data-i18n="contact_email_title">Email</h3>
+            <a href="mailto:christopoulosg2@gmail.com">christopoulosg2@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Δεξιά -->
+    <div class="col-lg-5">
+      <div class="info-wrap">
+    
+        <!-- Telegram -->
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <a href="https://t.me/yourusername" target="_blank" style="margin-right: 10px;">
+            <i class="bi bi-telegram"></i>
+          </a>
+          <div>
+            <h3>Telegram</h3>
+            <a href="https://t.me/yourusername" target="_blank" data-i18n="contact_telegram_text">Chat on Telegram</a>
+          </div>
+        </div>
+    
+        <!-- GitHub -->
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
+          <a href="https://github.com/Georgechrp" target="_blank" style="margin-right: 10px;">
+            <i class="bi bi-github"></i>
+          </a>
+          <div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/Georgechrp" target="_blank" data-i18n="contact_github_text">Check My Projects</a>
+          </div>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="700">
+          <a href="https://www.linkedin.com/in/georgechrp/" target="_blank" style="margin-right: 10px;">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <div>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/georgechrp/" target="_blank" data-i18n="contact_linkedin_text">Find me on LinkedIn</a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+        
+    </div>
+
+  </div>
+</div>
+
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+   <div class="container">
+  <div class="copyright text-center">
+    <p>© <strong class="px-1 sitename">Georgechrp</strong> <span id="year"></span></p>
+  </div>
+  <!--<div class="credits">
+    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  </div>-->
+</div>
+
+<script>
+  // Εμφανίζει την τρέχουσα χρονιά αυτόματα
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

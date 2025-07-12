@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlexFolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <!-- Web favicon (γενικό) -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!-- Apple Touch Icon (για iOS Home Screen) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+  <!-- Android & Chrome (manifest για PWA/shortcut) -->
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css" />
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7392605069972041"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+<nav class="topbar">
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="assets/favicon.ico" alt="FlexFolio Logo" style="height: 28px; vertical-align: middle; margin-right: 8px;">
+      FlexFolio
+    </a>
+
+
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#templates" id="nav-templates">Σχέδια</a></li>
+      <li><a href="#pricing" id="nav_pricing">Πακέτα</a></li>
+      <li><a href="#form" id="nav-form">Φόρμα Παραγγελίας</a></li>
+      <li><a href="#faq" id="nav-faq">Συχνές Ερωτήσεις</a></li>
+      <li>
+        <div class="language-toggle">
+          <input type="checkbox" id="langSwitch" onchange="toggleLanguage()" />
+          <label for="langSwitch" class="toggle-label">
+            <span class="lang lang-el">🇬🇷</span>
+            <span class="lang lang-en">🇬🇧</span>
+            <span class="toggle-ball"></span>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<header class="hero-header reveal-header">
+  <h1>Διάλεξε το δικό σου προσωπικό CV site</h1>
+  <p>Επαγγελματικό, δυναμικό, εύκολα επεξεργάσιμο</p>
+</header>
+
+
+
+    <section id="how-it-works" data-aos="fade-up">
+      <h2>Πώς λειτουργεί;</h2>
+      <p style="max-width: 800px; margin: auto; font-size: 1.1rem;">
+        Ήρθε η ώρα να αποκτήσεις το δικό σου επαγγελματικό CV site.  
+        Μέσα από λίγα απλά βήματα, μπορείς να το διαμορφώσεις σύμφωνα με τις ανάγκες σου.
+        <br/><br/>
+        1️⃣ Επίλεξε το σχέδιο (template) που σου αρέσει  
+        2️⃣ Διάλεξε το πακέτο που σου ταιριάζει (BASIC ή PRO+)  
+        3️⃣ Συμπλήρωσε τη φόρμα με τα στοιχεία σου  
+        <br/><br/>
+        Σύντομα θα επικοινωνήσουμε μαζί σου με όλες τις λεπτομέρειες και οδηγίες για την υλοποίηση.
+         </p>
+
+    </section>
+
+    <section id="templates" data-aos="fade-up">
+    <h2>Επέλεξε ένα από τα Templates που εμπιστεύτηκαν επαγγελματίες</h2>
+    <div class="template-grid">
+
+        <div class="template-card" data-template-url="templates/template1/index.html">
+          <img src="assets/img/template1.png" alt="Template 1" class="template-preview">
+          <div class="button-group">
+              <button onclick="previewTemplate('templates/template1/index.html')">🔍 Preview</button>
+              <button onclick="addToCart('template1')" class="choose-btn">🛒Επίλεξε</button>
+          </div>
+          <p class="template-note">Διαθέσιμο και στα δύο πακέτα</p>
+
+        </div>
+
+        <div class="template-card" data-template-url="templates/template2/index.html">
+          <img src="assets/img/template2.png" alt="Template 2" class="template-preview">
+          <div class="button-group">
+              <button onclick="previewTemplate('templates/template2/index.html')">🔍 Preview</button>
+              <button onclick="addToCart('template2')" class="choose-btn">🛒Επίλεξε</button>
+          </div>
+          <p class="template-note">Διαθέσιμο μόνο στο BACIC</p>
+        </div>
+
+        <div class="template-card" data-template-url="templates/template3/index.html">
+          <img src="assets/img/template3.png" alt="Template 3" class="template-preview">
+          <div class="button-group">
+              <button onclick="previewTemplate('templates/template3/index.html')">🔍 Preview</button>
+              <button onclick="addToCart('template3')" class="choose-btn">🛒Επίλεξε</button>
+          </div>
+          <p class="template-note">Διαθέσιμο μόνο στο BACIC</p>
+        </div>
+
+    </div>
+
+    <p id="selectedDisplay">Δεν έχει επιλεχθεί ακόμα template.</p>
+    </section>
+
+      <section id="pricing" data-aos="fade-up">
+        <h2 style="text-align:center; margin-bottom: 40px;">Πακέτα</h2>
+        <div class="pricing-grid">
+
+          <div class="pricing-card">
+            <div class="price-tag">$45</div>
+            <h3>BASIC</h3>
+            <ul>
+              <li>Static website</li>
+              <li>Mobile friendly</li>
+              <li>5 free mini changes</li>
+              <li>Domain not included*</li>
+            </ul>
+            <a  class="order-button" id="order-basic" onclick="addToCart('template1')">🛒 Επίλεξε</a>
+          </div>
+
+          <div class="pricing-card featured">
+            <div class="price-tag">$125</div>
+            <h3>PRO+</h3>
+            <ul>
+              <li>Editable site</li>
+              <li>30-day support</li>
+              <li>Unlimited edits</li>
+              <li>Domain included(1y)**</li>
+            </ul>
+            <a  class="order-button" id="order-pro" onclick="addToCart('template2')">🛒 Επίλεξε</a>
+          </div>
+
+
+        </div>
+        <p id="selectedPlanDisplay" style="text-align: center; margin-top: 20px; font-size: 1rem; color: #2e7d32;">
+  <!-- εδώ θα εμφανιστεί το μήνυμα επιλογής -->
+</p>
+      </section>
+
+
+
+    <section id="form" data-aos="fade-up">
+      <h2>Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε εμείς μαζί σου!</h2>
+      <form id="orderForm" action="https://formspree.io/f/xblynayz" method="POST">
+        <input type="text" name="name" id="form-name" placeholder="Ονοματεπώνυμο" required>
+        <input type="email" name="email" id="form-email" placeholder="Email" required>
+        <input type="hidden" name="selected_template" id="selected_template">
+        <input type="number" name="age" id="form-age" placeholder="Ηλικία (προαιρετικό)" min="14" max="100">
+        <textarea name="bio" id="form-bio" placeholder="Σύντομο bio (π.χ. τι κάνεις, τι έχεις σπουδάσει κλπ)"></textarea>
+        <textarea name="purpose" id="form-purpose" placeholder="Πού σκοπεύεις να χρησιμοποιήσεις το CV site; (LinkedIn, εύρεση εργασίας, προσωπικό blog...)"></textarea>
+        <button type="submit" id="form-submit">Αποστολή</button>
+      </form>
+    </section>
+
+
+    <section id="faq" data-aos="fade-up">
+      <h2>Συχνές Ερωτήσεις</h2>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          ❓ <strong>Πόσο κοστίζει ένα CV site;</strong>
+        </div>
+        <div class="faq-answer">
+          <p>Οι τιμές ξεκινούν από 45€, ανάλογα με τις απαιτήσεις και τις λειτουργίες.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          ❓ <strong>Σε πόσες μέρες θα είναι έτοιμο;</strong>
+        </div>
+        <div class="faq-answer">
+          <p>Μέσα σε 1–4 εργάσιμες μέρες από την υποβολή της φόρμας.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          ❓ <strong>Μπορώ να προσαρμόσω το template;</strong>
+        </div>
+        <div class="faq-answer">
+          <p>Φυσικά! Ανάλογα με το πακέτο που θα διαλέξεις, μπορείς να επεξεργαστείς ό,τι θέλεις(Κείμενα, εικόνες, χρώματα γραμματοσειρές).</p>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          ❓ <strong>Θα μπορώ να επεξεργάζομαι το site μόνος/η μου;</strong>
+        </div>
+        <div class="faq-answer">
+          <p>Ναι! Σου παρέχουμε απλό dashboard ή οδηγίες για να ενημερώνεις το περιεχόμενο χωρίς να χρειάζεσαι γνώσεις προγραμματισμού.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          ❓ <strong>Τι χρειάζεται να στείλω για να ξεκινήσει η κατασκευή;</strong>
+        </div>
+        <div class="faq-answer">
+          <p>Αρκεί να συμπληρώσεις τη φόρμα με τα βασικά στοιχεία. Μπορείς να προσθέσεις bio, φωτογραφία, στοιχεία επικοινωνίας και ό,τι άλλο θέλεις.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          ❓ <strong>Μπορώ να το συνδέσω με το LinkedIn ή το domain μου;</strong>
+        </div>
+        <div class="faq-answer">
+          <p>Βεβαίως. Υποστηρίζουμε σύνδεση με LinkedIn, GitHub, ακόμα και με το προσωπικό σου domain εφόσον έχεις.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          ❓ <strong>Παρέχετε υποστήριξη μετά την παράδοση;</strong>
+        </div>
+        <div class="faq-answer">
+          <p>Ναι, μπορείς να επικοινωνήσεις για μικρές αλλαγές ή υποστήριξη έως και 30 ημέρες μετά την παράδοση. Μετά από αυτό υπάρχει διαθέσιμο πακέτο υποστήριξης.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+  
+    <button id="scrollToTop" onclick="scrollToTop()" aria-label="Επιστροφή στην κορυφή">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white">
+        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.59 5.58L20 12l-8-8-8 8z"/>
+      </svg>
+    </button>
+
+      <footer style="background-color: #0d47a1; color: white; text-align: center; padding: 1rem 0; margin-top: 2rem;">
+        <p style="margin: 0;">&copy; 2025 FlexFolio. All rights reserved.</p>
+
+        <a href="https://coff.ee/flexfolio_team" target="_blank" style="
+          display: inline-block;
+          padding: 8px 12px;
+          background-color: #FFDD00;
+          color: #000;
+          font-weight: bold;
+          border-radius: 6px;
+          text-decoration: none;
+          margin: 10px auto;
+          display: inline-block;
+        ">
+          ☕ Buy me a coffee
+        </a>
+
+        <p style="margin-top: 0.5rem;">
+          <a href="terms.html" style="color: #bbdefb; text-decoration: none;">Όροι Χρήσης</a> | 
+          <a href="mailto:info@flex-folio.com" style="color: #bbdefb; text-decoration: none;">Επικοινωνία</a>
+        </p>
+      </footer>
+
+
+
+
+
+
+    <div id="chatbot-button">💬 <span id="chatbot-open">Βοήθεια;</span></div>
+
+    <div id="chatbot-box" class="hidden">
+      <div id="chatbot-header">🤖 <span id="chatbot-title">Βοηθός Επιλογής Template</span></div>
+      <div id="chatbot-content">
+        <p id="chatbot-msg">Γεια σου! 👋 Θες να σε βοηθήσω να βρεις το κατάλληλο template;</p>
+        <button onclick="nextStep(1)" id="chatbot-yes">Ναι, φυσικά!</button>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="chatbot.js"></script>
+    <script src="order.js"></script>
+    <script src="lang.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      function toggleFaq(element) {
+        const answer = element.querySelector('.faq-answer');
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      }
+    </script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+    <script>
+      const scrollBtn = document.getElementById('scrollToTop');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          scrollBtn.classList.add('show');
+        } else {
+          scrollBtn.classList.remove('show');
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    </script>
+
+        <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // scroll down → κρύψε header
+            header.classList.add("hidden");
+          } else {
+            // scroll up → δείξε header
+            header.classList.remove("hidden");
+          }
+
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        const revealHeader = document.querySelector(".reveal-header");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    revealHeader.classList.add("visible");
+  }, 300);
+});
+
+        </script>
+
+
+
+
+
+</body>
+</html>
