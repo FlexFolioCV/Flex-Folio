@@ -395,6 +395,13 @@
     </script>
 
         <script>
+          function toggleMenu() {
+            const navLinks = document.querySelector('.topbar .nav-links');
+            if (navLinks) {
+              navLinks.classList.toggle('show');
+            }
+          }
+
         let lastScrollTop = 0;
         const header = document.querySelector("header");
 

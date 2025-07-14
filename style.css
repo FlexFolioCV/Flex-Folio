@@ -261,13 +261,17 @@ html {
   background-color: #bbdefb;
 }
 
-
-
 .nav-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  position: relative;
+  z-index: 1000;
 }
+.topbar .container {
+  overflow: visible;
+}
+
 
 .nav-toggle span {
   width: 25px;
