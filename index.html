@@ -58,6 +58,29 @@
               </label>
             </div>
           </li>
+          <li>
+              <button id="cartButton" onclick="toggleCart()" aria-label="Καλάθι" style="
+                background: none;
+                border: none;
+                font-size: 1.4rem;
+                cursor: pointer;
+                position: relative;
+                color: #0d47a1;
+              ">
+                🛒
+                <span id="cartBadge" style="
+                  position: absolute;
+                  top: -4px;
+                  right: -8px;
+                  background: #ff5252;
+                  color: white;
+                  font-size: 0.7rem;
+                  padding: 1px 5px;
+                  border-radius: 50%;
+                  display: none;
+                ">1</span>
+              </button>
+            </li>
         </ul>
       </div>
     </nav>
@@ -89,46 +112,47 @@
 
     <section id="templates" data-aos="fade-up" class="section-colored">
     
-    <div class="container">
-      <h2 style="color: white;">Επίλεξε ένα από τα Templates που εμπιστεύτηκαν επαγγελματίες</h2>
-      <div class="template-grid">
+        <div class="container">
+          <h2 style="color: white;">Επίλεξε ένα από τα Templates που εμπιστεύτηκαν επαγγελματίες</h2>
+          <div class="template-grid">
 
-          <div class="template-card" data-template-url="templates/template1/index.html">
-            <img src="assets/img/template1.png" alt="Template 1" class="template-preview">
-            <div class="button-group">
-                <button onclick="previewTemplate('templates/template1/index.html')">🔍 Preview</button>
-                <button onclick="addToCart('template1')" class="choose-btn">🛒Επίλεξε</button>
-            </div>
-            <p class="template-note">Διαθέσιμο και στα δύο πακέτα</p>
+              <div class="template-card" data-template-url="templates/template1/index.html">
+                <img src="assets/img/template1.png" alt="Template 1" class="template-preview">
+                <div class="button-group">
+                    <button onclick="previewTemplate('templates/template1/index.html')">🔍 Preview</button>
+                    <button onclick="addToCart('template1')" class="choose-btn">🛒Επίλεξε</button>
+                </div>
+                <p id="availableboth" class="template-note">Διαθέσιμο και στα δύο πακέτα</p>
+
+              </div>
+
+              <div class="template-card" data-template-url="templates/template2/index.html">
+                <img src="assets/img/template2.png" alt="Template 2" class="template-preview">
+                <div class="button-group">
+                    <button onclick="previewTemplate('templates/template2/index.html')">🔍 Preview</button>
+                    <button onclick="addToCart('template2')" class="choose-btn">🛒Επίλεξε</button>
+                </div>
+                <p id="availablebasic" class="template-note">Διαθέσιμο μόνο στο BACIC</p>
+              </div>
+
+              <div class="template-card" data-template-url="templates/template3/index.html">
+                <img src="assets/img/template3.png" alt="Template 3" class="template-preview">
+                <div class="button-group">
+                    <button onclick="previewTemplate('templates/template3/index.html')">🔍 Preview</button>
+                    <button onclick="addToCart('template3')" class="choose-btn">🛒Επίλεξε</button>
+                </div>
+                <p id="availablebasic2" class="template-note">Διαθέσιμο μόνο στο BACIC</p>
+              </div>
 
           </div>
-
-          <div class="template-card" data-template-url="templates/template2/index.html">
-            <img src="assets/img/template2.png" alt="Template 2" class="template-preview">
-            <div class="button-group">
-                <button onclick="previewTemplate('templates/template2/index.html')">🔍 Preview</button>
-                <button onclick="addToCart('template2')" class="choose-btn">🛒Επίλεξε</button>
-            </div>
-            <p class="template-note">Διαθέσιμο μόνο στο BACIC</p>
-          </div>
-
-          <div class="template-card" data-template-url="templates/template3/index.html">
-            <img src="assets/img/template3.png" alt="Template 3" class="template-preview">
-            <div class="button-group">
-                <button onclick="previewTemplate('templates/template3/index.html')">🔍 Preview</button>
-                <button onclick="addToCart('template3')" class="choose-btn">🛒Επίλεξε</button>
-            </div>
-            <p class="template-note">Διαθέσιμο μόνο στο BACIC</p>
-          </div>
-
-      </div>
-    </div>
-    <p id="selectedDisplay" style="color: white;">Δεν έχει επιλεχθεί ακόμα template.</p>
+        </div>
+        <p id="selectedDisplay" style="color: white;">Δεν έχει επιλεχθεί ακόμα template.</p>
     </section>
 
       <section id="pricing" data-aos="fade-up">
+        <h2 id="pricing-title" style="text-align:center; margin-bottom: 40px;">Πακέτα</h2>
         <div class="container">
-          <h2 style="text-align:center; margin-bottom: 40px;">Πακέτα</h2>
+          
             <div class="pricing-grid">
 
                 <div class="pricing-card">
@@ -278,6 +302,43 @@
         </p>
       </footer>
 
+
+        <div id="cartPopup" style="
+            position: fixed;
+            right: 20px;
+            top: 70px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            padding: 16px;
+            width: 300px;
+            z-index: 999;
+            display: none;
+            font-family: 'Inter', sans-serif;
+          ">
+            <h3 style="margin-top: 0;">🛒 Επιλογές σου</h3>
+            <p><strong>Template:</strong> <span id="popupTemplate">–</span></p>
+            <p><strong>Πακέτο:</strong> <span id="popupPlan">–</span></p>
+
+            <div style="margin-top: 12px; display: flex; justify-content: space-between;">
+              <a href="#form" onclick="toggleCart()" style="
+                background-color: #0d47a1;
+                color: white;
+                padding: 8px 12px;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: bold;
+              ">Συμπλήρωσε Φόρμα</a>
+              <button onclick="clearCart()" style="
+                background: none;
+                border: none;
+                color: #ff5252;
+                font-weight: bold;
+                cursor: pointer;
+              ">✖ Καθαρισμός</button>
+            </div>
+          </div>
 
 
 

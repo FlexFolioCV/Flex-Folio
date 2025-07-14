@@ -4,7 +4,7 @@
     "subtitle": "Επαγγελματικό, δυναμικό, επεξεργάσιμο",
     "how_it_works": "Ποιοι είμαστε & τι προσφέρουμε;",
     "how_it_works_desc": "Είμαστε μια ομάδα που σε βοηθά να αποκτήσεις το δικό σου επαγγελματικό CV site, χωρίς τεχνικές γνώσεις, χωρίς άγχος και σε προσιτή τιμή.\n\nΣτο FlexFolio συνδυάζουμε χαμηλό κόστος με επαγγελματική ποιότητα.\n\nΉρθε η ώρα να αποκτήσεις το δικό σου επαγγελματικό CV site.\nΜέσα από λίγα απλά βήματα, μπορείς να το διαμορφώσεις όπως θέλεις εσύ.\n\n1️⃣ Επίλεξε το σχέδιο (template) που σου αρέσει\n2️⃣ Διάλεξε το πακέτο που σου ταιριάζει (BASIC ή PRO+)\n3️⃣ Συμπλήρωσε τη φόρμα με τα στοιχεία σου\n\nΘα επικοινωνήσουμε μαζί σου άμεσα με όλες τις λεπτομέρειες και οδηγίες για την υλοποίηση.",
-    "select_template": "Επέλεξε ένα από τα Templates που εμπιστεύτηκαν επαγγελματίες",
+    "select_template": "Επίλεξε ένα από τα Templates που εμπιστεύτηκαν επαγγελματίες",
     "form_title": "Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε εμείς μαζί σου!",
     "submit": "Αποστολή",
     "no_template": "Δεν έχει επιλεχθεί ακόμα template.",
@@ -14,6 +14,7 @@
     "nav_pricing":"Πακέτα",
     "nav_templates": "Σχέδια",
     "nav_form": "Φόρμα Παραγγελίας",
+    "nav_faq":"Συχνές Ερωτήσεις",
     "chatbot_open": "Βοήθεια;",
     "chatbot_title": "Βοηθός Επιλογής Template",
     "chatbot_yes": "Ναι, φυσικά!",
@@ -27,7 +28,12 @@
     "template2_name": "το δεύτερο σχέδιο",
     "template3_name": "το τρίτο σχέδιο",
     "template_selected": "✔️ Έχεις επιλέξει __TEMPLATE__.",
-    "choose":"🛒Επίλεξε"
+    "choose":"🛒Προσθήκη",
+    "plans":"Πακέτα",
+    "availableboth":"Διαθέσιμο και στα δύο πακέτα",
+    "availablebasic":"Διαθέσιμο μόνο στο BACIC",
+    "availablebasic2":"Διαθέσιμο μόνο στο BACIC"
+
   },
   "en": {
     "title": "Choose your personal CV website",
@@ -44,6 +50,7 @@
     "nav_pricing":"Plans",
     "nav_templates": "Templates",
     "nav_form": "Order Form",
+    "nav_faq":"Faq",
     "chatbot_open": "Help?",
     "chatbot_title": "Template Assistant",
     "chatbot_yes": "Yes, please!",
@@ -57,6 +64,11 @@
     "template2_name": "the second template",
     "template3_name": "the third template",
     "template_selected": "✔️ You have selected __TEMPLATE__.",
-    "choose":"🛒Choose"
+    "choose":"🛒Add",
+    "plans":"Plans",
+    "availableboth": "Available in both plans",
+    "availablebasic": "Available only in BASIC",
+    "availablebasic2": "Available only in BASIC"
+
   }
 }

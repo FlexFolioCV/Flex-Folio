@@ -20,11 +20,10 @@ function addToCart(templateId) {
   const planFriendlyName = planNames[templateId];
 
   displayField.textContent = `✔️ Έχεις επιλέξει ${userFriendlyName}.`;
-
   if (planFriendlyName) {
     planDisplay.textContent = `✔️ Έχεις επιλέξει ${planFriendlyName}.`;
   } else {
-    planDisplay.textContent = ""; // κρύβεται αν δεν έχει σχέση με πακέτο
+    planDisplay.textContent = "";
   }
 
   const hiddenInput = document.getElementById("selected_template");
@@ -35,15 +34,23 @@ function addToCart(templateId) {
     btn.classList.remove('selected');
   });
 
-  // Βρες και δώσε "selected" class στο ενεργό κουμπί
+  // Δώσε "selected" class στο ενεργό κουμπί
   document.querySelectorAll('.choose-btn, .order-button').forEach(btn => {
     if (btn.onclick && btn.onclick.toString().includes(`'${templateId}'`)) {
       btn.classList.add('selected');
     }
   });
+
+  // ✅ Ενημέρωσε το καλάθι (popup)
+  const popup = document.getElementById("cartPopup");
+  const badge = document.getElementById("cartBadge");
+
+  if (popup && badge) {
+    document.getElementById("popupTemplate").textContent = userFriendlyName;
+    document.getElementById("popupPlan").textContent = planFriendlyName || "-";
+    badge.style.display = "inline-block";
+  }
 }
-
-
 
 function previewTemplate(templateUrl) {
   window.open(templateUrl, '_blank');
@@ -64,10 +71,50 @@ document.addEventListener("DOMContentLoaded", function () {
       if (url) window.open(url, "_blank");
     });
   });
+
+  // Αν έχει προηγούμενη επιλογή, εμφάνισε την στο καλάθι
+  const saved = sessionStorage.getItem('selectedTemplate');
+  if (saved) {
+    addToCart(saved); // Επαναχρησιμοποίηση της ίδιας συνάρτησης
+  }
 });
 
+// ✅ Λειτουργία εμφάνισης/απόκρυψης popup
+function toggleCart() {
+  const popup = document.getElementById("cartPopup");
+  if (!popup) return;
+
+  if (popup.classList.contains("show")) {
+    popup.classList.remove("show");
+    setTimeout(() => popup.style.display = "none", 300);
+  } else {
+    popup.style.display = "block";
+    setTimeout(() => popup.classList.add("show"), 10);
+  }
+}
 
 
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('show');
+// ✅ Λειτουργία καθαρισμού επιλογών
+function clearCart() {
+  sessionStorage.removeItem("selectedTemplate");
+
+  document.getElementById("selectedDisplay").textContent = "Δεν έχει επιλεχθεί ακόμα template.";
+  document.getElementById("selectedPlanDisplay").textContent = "";
+
+  const hiddenInput = document.getElementById("selected_template");
+  hiddenInput.value = "";
+
+  const popup = document.getElementById("cartPopup");
+  const badge = document.getElementById("cartBadge");
+  if (popup && badge) {
+    document.getElementById("popupTemplate").textContent = "–";
+    document.getElementById("popupPlan").textContent = "–";
+    badge.style.display = "none";
+    popup.style.display = "none";
+  }
+
+  // Καθαρισμός κουμπιών
+  document.querySelectorAll('.choose-btn, .order-button').forEach(btn => {
+    btn.classList.remove('selected');
+  });
 }

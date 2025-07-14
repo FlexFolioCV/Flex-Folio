@@ -28,15 +28,19 @@ async function setLanguage(lang) {
     document.querySelector('#form h2').textContent = t.form_title;
     document.querySelector('#orderForm button').textContent = t.submit;
 
+    safeSetText("pricing-title", t.plans);
     safeSetText("chatbot-header", t.chatbot_header);
     safeSetText("chatbot-title", t.chatbot_title);
     safeSetText("chatbot-msg", t.chatbot_msg);
     safeSetText("chatbot-open", t.chatbot_open);
     safeSetText("chatbot-yes", t.chatbot_yes);
     safeSetText("nav-templates", t.nav_templates);
-    safeSetText("nav-pricing", t.nav_pricing);
+    safeSetText("nav_pricing", t.nav_pricing);
     safeSetText("nav-form", t.nav_form);
-
+    safeSetText("nav-faq", t.nav_faq);
+    safeSetText("availableboth", t.availableboth);
+    safeSetText("availablebasic", t.availablebasic);
+    safeSetText("availablebasic2", t.availablebasic2);
     safeSetPlaceholder("form-name", t.form_name);
     safeSetPlaceholder("form-email", t.form_email);
     safeSetPlaceholder("form-age", t.form_age);
