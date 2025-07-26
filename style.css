@@ -64,7 +64,7 @@ section:not(.section-colored) {
     padding: 0.4rem 0.8rem;
     border: none;
     border-radius: 5px;
-    background: #0d47a1;
+    background: #073047;
     color: white;
     cursor: pointer;
     transition: background 0.3s;
@@ -121,7 +121,7 @@ form button:hover {
 }
 
 form button:active {
-  background-color: #0d47a1;
+  background-color: #073047;
   transform: scale(0.99);
 }
 
@@ -197,7 +197,7 @@ html {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #0d47a1;
+  background-color: #073047;
   color: white;
   border-radius: 30px;
   padding: 0.8rem 1.2rem;
@@ -229,7 +229,7 @@ html {
 }
 
 #chatbot-header {
-  background-color: #0d47a1;
+  background-color: #073047;
   color: white;
   padding: 0.8rem;
   font-weight: bold;
@@ -252,7 +252,7 @@ html {
   border: none;
   border-radius: 5px;
   background-color: #e3f2fd;
-  color: #0d47a1;
+  color: #073047;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s;
@@ -472,7 +472,7 @@ html {
   position: fixed;
   bottom: 90px;
   right: 30px;
-  background-color: #0d47a1;
+  background-color: #073047;
   border: none;
   border-radius: 50%;
   padding: 0.75rem;
@@ -569,7 +569,7 @@ section::before {
   font-size: 32px;
   font-weight: bold;
   background: #8dcaff;
-  color: #2e2e82;
+  color: #073047;
   border-radius: 8px;
   padding: 8px 0;
   margin-bottom: 15px;
@@ -596,7 +596,7 @@ section::before {
 .order-button {
   display: inline-block;
   background: white;
-  color: #2e2e82;
+  color: #073047;
   padding: 12px 24px;
   border-radius: 30px;
   font-weight: bold;
