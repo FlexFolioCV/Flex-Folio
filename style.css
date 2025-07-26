@@ -551,7 +551,7 @@ section::before {
 }
 
 .pricing-card {
-  background: #2e2e82;
+  background: #073047;
   color: white;
   border-radius: 16px;
   width: 280px;
@@ -562,7 +562,7 @@ section::before {
 }
 
 .pricing-card.featured {
-  background: #2e2e82;
+  background: #073047;
 }
 
 .price-tag {
@@ -688,7 +688,7 @@ section:not(.section-colored) {
 
 
 #templates.section-colored {
-  background-color: #00255c; /* πιο ανοιχτό από το #cecece αν θες διαφορά */
+  background-color: #073047; /* πιο ανοιχτό από το #cecece αν θες διαφορά */
   width: 100%;
   padding: 60px 20px;
 }
