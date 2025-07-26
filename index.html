@@ -52,13 +52,17 @@
             <div class="language-toggle">
               <input type="checkbox" id="langSwitch" onchange="toggleLanguage()" />
               <label for="langSwitch" class="toggle-label">
-                <span class="lang lang-el">🇬🇷</span>
-                <span class="lang lang-en">🇬🇧</span>
+                <span class="lang lang-el">
+                      <span class="lang-text">GR</span>
+                    </span>
+                    <span class="lang lang-en">
+                      <span class="lang-text">EN</span>
+                    </span>
                 <span class="toggle-ball"></span>
               </label>
             </div>
           </li>
-          <li>
+         <!-- <li>
               <button id="cartButton" onclick="toggleCart()" aria-label="Καλάθι" style="
                 background: none;
                 border: none;
@@ -81,6 +85,7 @@
                 ">1</span>
               </button>
             </li>
+            -->
         </ul>
       </div>
     </nav>
@@ -424,7 +429,7 @@
       window.addEventListener("load", () => {
         setTimeout(() => {
           revealHeader.classList.add("visible");
-        }, 300);
+        }, 200);
       });
 
         </script>
