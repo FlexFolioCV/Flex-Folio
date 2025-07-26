@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="style.css" />
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7392605069972041"
      crossorigin="anonymous"></script>
 </head>
@@ -92,12 +92,21 @@
 
 
 
-    <header class="hero-header reveal-header">
+    <!--<header class="hero-header reveal-header">
       <h1>Διάλεξε το δικό σου προσωπικό CV site</h1>
       <p>Επαγγελματικό, δυναμικό, επεξεργάσιμο</p>
-    </header>
-
-
+    </header>-->
+    <div id="particles-bg"></div>
+<header class="network-hero-bg animated-header-reveal">
+  <svg class="network-bg" width="100%" height="100%" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <polyline points="0,160 120,180 240,140 360,200 480,160 600,180 720,140 840,200 960,160 1080,180 1200,140 1320,200 1440,160"
+      fill="none" stroke="#40c4ff" stroke-width="2" opacity="0.12"/>
+    <polyline points="0,200 120,220 240,180 360,240 480,200 600,220 720,180 840,240 960,200 1080,220 1200,180 1320,240 1440,200"
+      fill="none" stroke="#00bcd4" stroke-width="2" opacity="0.10"/>
+  </svg>
+  <h1>Διάλεξε το δικό σου προσωπικό CV site</h1>
+  <p id="typed-effect">Επαγγελματικό, δυναμικό, επεξεργάσιμο</p>
+</header>
 
     <section id="how-it-works" class="section-colored" data-aos="fade-up">
       <div class="container">
@@ -115,8 +124,12 @@
       </div>
     </section>
 
-    <section id="templates" data-aos="fade-up" class="section-colored">
-    
+      <section id="templates" data-aos="fade-up" class="section-colored blobs-section-bg">
+        <div class="blobs-bg">
+          <span class="blob blob1"></span>
+          <span class="blob blob2"></span>
+          <span class="blob blob3"></span>
+        </div>
         <div class="container">
           <h2 style="color: white;">Επίλεξε ένα από τα Templates που εμπιστεύτηκαν επαγγελματίες</h2>
           <div class="template-grid">
@@ -284,28 +297,7 @@
       </svg>
     </button>
 
-      <footer style="background-color: #0d47a1; color: white; text-align: center; padding: 1rem 0; margin-top: 2rem;">
-        <p style="margin: 0;">&copy; 2025 FlexFolio. All rights reserved.</p>
-
-        <!--<a href="https://coff.ee/flexfolio_team" target="_blank" style="
-          display: inline-block;
-          padding: 8px 12px;
-          background-color: #FFDD00;
-          color: #000;
-          font-weight: bold;
-          border-radius: 6px;
-          text-decoration: none;
-          margin: 10px auto;
-          display: inline-block;
-        ">
-          ☕ Buy us a coffee
-        </a>-->
-
-        <p style="margin-top: 0.5rem;">
-          <a href="terms.html" style="color: #bbdefb; text-decoration: none;">Όροι Χρήσης</a> | 
-          <a href="mailto:info@flex-folio.com" style="color: #bbdefb; text-decoration: none;">Επικοινωνία</a>
-        </p>
-      </footer>
+     <div id="footer-placeholder"></div>
 
 
         <div id="cartPopup" style="
@@ -367,75 +359,10 @@
     <script src="order.js"></script>
     <script src="lang.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      function toggleFaq(element) {
-        const answer = element.querySelector('.faq-answer');
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-      }
-    </script>
 
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
-    </script>
-    <script>
-      const scrollBtn = document.getElementById('scrollToTop');
-
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          scrollBtn.classList.add('show');
-        } else {
-          scrollBtn.classList.remove('show');
-        }
-      });
-
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
-    </script>
-
-        <script>
-          function toggleMenu() {
-            const navLinks = document.querySelector('.topbar .nav-links');
-            if (navLinks) {
-              navLinks.classList.toggle('show');
-            }
-          }
-
-        let lastScrollTop = 0;
-        const header = document.querySelector("header");
-
-        window.addEventListener("scroll", function () {
-          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-          if (scrollTop > lastScrollTop && scrollTop > 100) {
-            // scroll down → κρύψε header
-            header.classList.add("hidden");
-          } else {
-            // scroll up → δείξε header
-            header.classList.remove("hidden");
-          }
-
-          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        });
-
-        const revealHeader = document.querySelector(".reveal-header");
-
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          revealHeader.classList.add("visible");
-        }, 200);
-      });
-
-        </script>
-
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
 
 
 </body>
