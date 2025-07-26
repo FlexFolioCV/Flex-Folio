@@ -59,14 +59,14 @@ async function setLanguage(lang) {
 }
 
 
-// 🔁 Συνάρτηση που συνδέεται με το toggle input
-function toggleLanguage() {
-  const checkbox = document.getElementById('langSwitch');
-  const lang = checkbox.checked ? 'en' : 'el';
-  setLanguage(lang);
-}
 
-// 🌐 Φόρτωσε αρχικά ελληνικά
-document.addEventListener('DOMContentLoaded', () => {
-  setLanguage('el');
-});
+function toggleLanguage() {
+  currentLang = currentLang === 'el' ? 'en' : 'el';
+  document.getElementById('flagIcon').textContent = currentLang === 'el' ? '🇬🇷' : '🇬🇧';
+
+  const btn = document.getElementById('langBtn');
+  btn.classList.toggle('active-el', currentLang === 'el');
+  btn.classList.toggle('active-en', currentLang === 'en');
+
+  setLanguage(currentLang); // Η δική σου συνάρτηση
+}

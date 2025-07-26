@@ -46,20 +46,9 @@
           <li><a href="#pricing" id="nav_pricing">Πακέτα</a></li>
           <li><a href="#form" id="nav-form">Φόρμα Παραγγελίας</a></li>
           <li><a href="#faq" id="nav-faq">Συχνές Ερωτήσεις</a></li>
-          <li>
-            <div class="language-toggle">
-              <input type="checkbox" id="langSwitch" onchange="toggleLanguage()" />
-              <label for="langSwitch" class="toggle-label">
-                <span class="lang lang-el">
-                      <span class="lang-text">GR</span>
-                    </span>
-                    <span class="lang lang-en">
-                      <span class="lang-text">EN</span>
-                    </span>
-                <span class="toggle-ball"></span>
-              </label>
-            </div>
-          </li>
+          <div id="langBtn" class="lang-flag-btn active-el" onclick="toggleLanguage()">
+            <span id="flagIcon">🇬🇷</span>
+          </div>
          <!-- <li>
               <button id="cartButton" onclick="toggleCart()" aria-label="Καλάθι" style="
                 background: none;
