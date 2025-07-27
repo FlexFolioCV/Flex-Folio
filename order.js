@@ -1,8 +1,14 @@
-function addToCart(templateId) {
+function addToCart(templateId, plan) {
   sessionStorage.setItem('selectedTemplate', templateId);
+  if (plan) {
+    sessionStorage.setItem('selectedPlan', plan);
+  } else {
+    sessionStorage.removeItem('selectedPlan');
+  }
 
   const displayField = document.getElementById("selectedDisplay");
   const planDisplay = document.getElementById("selectedPlanDisplay");
+  const summary = document.getElementById("formSelectionSummary");
 
   const templateNames = {
     template1: "το πρώτο σχέδιο",
@@ -11,23 +17,44 @@ function addToCart(templateId) {
   };
 
   const planNames = {
-    template1: "το πρώτο πακέτο (BASIC)",
-    template2: "το δεύτερο πακέτο (STANDARD)",
-    template3: "το δεύτερο πακέτο (PRO+)"
+    BASIC: "το πακέτο BASIC",
+    STANDARD: "το πακέτο STANDARD"
   };
 
   const userFriendlyName = templateNames[templateId] || "κάποιο σχέδιο";
-  const planFriendlyName = planNames[templateId];
+  const planFriendlyName = plan ? (planNames[plan] || "") : "";
 
-  displayField.textContent = `✔️ Έχεις επιλέξει ${userFriendlyName}.`;
-  if (planFriendlyName) {
-    planDisplay.textContent = `✔️ Έχεις επιλέξει ${planFriendlyName}.`;
-  } else {
-    planDisplay.textContent = "";
+  // Ενημέρωση εμφανιζόμενων πεδίων
+  if (displayField) {
+    if (!templateId) {
+      displayField.textContent = "Δεν έχει επιλεχθεί ακόμα template.";
+    } else {
+      displayField.textContent = `✔️ Έχεις επιλέξει ${userFriendlyName}.`;
+    }
+  }
+  if (planDisplay) {
+    if (plan) {
+      planDisplay.textContent = `✔️ Έχεις επιλέξει ${planFriendlyName}.`;
+    } else {
+      planDisplay.textContent = "Επίλεξε πακέτο.";
+    }
+  }
+  if (summary) {
+    if (!templateId) {
+      summary.textContent = "Δεν έχεις επιλέξει ακόμα template ή πακέτο.";
+    } else if (plan) {
+      summary.textContent = `Έχεις επιλέξει: ${userFriendlyName} και ${planFriendlyName}.`;
+    } else {
+      summary.textContent = `Έχεις επιλέξει: ${userFriendlyName}. Επίλεξε πακέτο.`;
+    }
   }
 
+  // Ενημέρωση hidden inputs για τη φόρμα (βάλε τα ids, όχι τα user-friendly)
   const hiddenInput = document.getElementById("selected_template");
-  hiddenInput.value = templateId;
+  if (hiddenInput) hiddenInput.value = templateId || "";
+
+  const hiddenPlanInput = document.getElementById("selected_plan");
+  if (hiddenPlanInput) hiddenPlanInput.value = plan || "";
 
   // Καθάρισε τα κουμπιά από προηγούμενη επιλογή
   document.querySelectorAll('.choose-btn, .order-button').forEach(btn => {
@@ -41,26 +68,46 @@ function addToCart(templateId) {
     }
   });
 
-  // ✅ Ενημέρωσε το καλάθι (popup)
+  // Ενημέρωσε το καλάθι (popup)
   const popup = document.getElementById("cartPopup");
   const badge = document.getElementById("cartBadge");
 
   if (popup && badge) {
-    document.getElementById("popupTemplate").textContent = userFriendlyName;
-    document.getElementById("popupPlan").textContent = planFriendlyName || "-";
+    const popupTemplate = document.getElementById("popupTemplate");
+    const popupPlan = document.getElementById("popupPlan");
+    if (popupTemplate) popupTemplate.textContent = userFriendlyName;
+    if (popupPlan) popupPlan.textContent = planFriendlyName || "-";
     badge.style.display = "inline-block";
   }
 }
 
-function previewTemplate(templateUrl) {
-  window.open(templateUrl, '_blank');
+function selectPlan(plan) {
+  const selectedTemplate = sessionStorage.getItem('selectedTemplate');
+
+  if (!selectedTemplate) {
+    showCustomPopup('Παρακαλώ επίλεξε πρώτα template.');
+    return;
+  }
+
+  // Μόνο το template1 υποστηρίζει STANDARD
+  if ((selectedTemplate === 'template2' || selectedTemplate === 'template3') && plan === 'STANDARD') {
+    showCustomPopup('Το συγκεκριμένο template δεν είναι διαθέσιμο στο πακέτο STANDARD. Παρακαλώ επίλεξε το BASIC ή άλλαξε template.');
+    return;
+  }
+
+  // Αν όλα είναι εντάξει, κάνε addToCart με το σωστό template και plan
+  addToCart(selectedTemplate, plan);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("form").addEventListener("submit", function () {
     const selectedTemplate = sessionStorage.getItem('selectedTemplate');
+    const selectedPlan = sessionStorage.getItem('selectedPlan');
     if (selectedTemplate) {
       document.getElementById("selected_template").value = selectedTemplate;
+    }
+    if (selectedPlan) {
+      document.getElementById("selected_plan").value = selectedPlan;
     }
   });
 
@@ -74,35 +121,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Αν έχει προηγούμενη επιλογή, εμφάνισε την στο καλάθι
   const saved = sessionStorage.getItem('selectedTemplate');
+  const savedPlan = sessionStorage.getItem('selectedPlan');
   if (saved) {
-    addToCart(saved); // Επαναχρησιμοποίηση της ίδιας συνάρτησης
+    addToCart(saved, savedPlan);
   }
 });
-
-// ✅ Λειτουργία εμφάνισης/απόκρυψης popup
-function toggleCart() {
-  const popup = document.getElementById("cartPopup");
-  if (!popup) return;
-
-  if (popup.classList.contains("show")) {
-    popup.classList.remove("show");
-    setTimeout(() => popup.style.display = "none", 300);
-  } else {
-    popup.style.display = "block";
-    setTimeout(() => popup.classList.add("show"), 10);
-  }
-}
-
 
 // ✅ Λειτουργία καθαρισμού επιλογών
 function clearCart() {
   sessionStorage.removeItem("selectedTemplate");
+  sessionStorage.removeItem("selectedPlan");
 
   document.getElementById("selectedDisplay").textContent = "Δεν έχει επιλεχθεί ακόμα template.";
   document.getElementById("selectedPlanDisplay").textContent = "";
+  const summary = document.getElementById("formSelectionSummary");
+  if (summary) summary.textContent = "Δεν έχεις επιλέξει ακόμα template ή πακέτο.";
 
   const hiddenInput = document.getElementById("selected_template");
-  hiddenInput.value = "";
+  if (hiddenInput) hiddenInput.value = "";
+
+  const hiddenPlanInput = document.getElementById("selected_plan");
+  if (hiddenPlanInput) hiddenPlanInput.value = "";
 
   const popup = document.getElementById("cartPopup");
   const badge = document.getElementById("cartBadge");
@@ -118,3 +157,30 @@ function clearCart() {
     btn.classList.remove('selected');
   });
 }
+
+
+
+function showCustomPopup(message) {
+  const overlay = document.getElementById('customPopupOverlay');
+  const content = document.getElementById('customPopupContent');
+  if (content) content.innerHTML = message;
+  if (overlay) overlay.style.display = 'flex';
+}
+
+function hideCustomPopup() {
+  const overlay = document.getElementById('customPopupOverlay');
+  if (overlay) overlay.style.display = 'none';
+}
+
+// Κλείσιμο με το Χ
+document.addEventListener('DOMContentLoaded', function() {
+  const closeBtn = document.getElementById('customPopupClose');
+  if (closeBtn) closeBtn.onclick = hideCustomPopup;
+  // Κλείσιμο με κλικ έξω από το popup
+  const overlay = document.getElementById('customPopupOverlay');
+  if (overlay) {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) hideCustomPopup();
+    });
+  }
+});

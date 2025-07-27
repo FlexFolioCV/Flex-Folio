@@ -1113,3 +1113,51 @@ section::before {
   padding: 14px 18px;
   box-shadow: 0 1px 6px 0 rgba(80, 80, 160, 0.04);
 }
+
+
+
+
+
+
+/*Pop up */
+
+
+#customPopupOverlay {
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+#customPopup {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 24px 24px 24px;
+  min-width: 280px;
+  max-width: 90vw;
+  text-align: center;
+  position: relative;
+  animation: popupIn 0.25s;
+}
+
+#customPopupClose {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  font-size: 1.7rem;
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+#customPopupClose:hover { color: #d32f2f; }
+
+@keyframes popupIn {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
