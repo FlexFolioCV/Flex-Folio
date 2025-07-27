@@ -93,3 +93,14 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('footer-placeholder').innerHTML = data;
     });
 });
+
+
+
+document.querySelectorAll('.topbar .nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    const navLinks = document.querySelector('.topbar .nav-links');
+    if (window.innerWidth <= 768) {
+      navLinks.classList.remove('show');
+    }
+  });
+});

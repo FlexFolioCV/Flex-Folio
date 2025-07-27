@@ -28,6 +28,7 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
+
     <nav class="topbar">
       <div class="container">
         <a href="#" class="logo">
@@ -226,7 +227,7 @@
       </section>
 
       <section id="form" data-aos="fade-up" class="section-colored network-section-bg">
-               <svg class="network-bg" width="100%" height="100%" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <svg class="network-bg" width="100%" height="100%" viewBox="0 0 1440 320" preserveAspectRatio="none">
         <!-- Πάνω αριστερά -->
         <circle cx="80" cy="40" r="10" fill="#40c4ff" opacity="0.18"/>
         <circle cx="180" cy="90" r="7" fill="#00bcd4" opacity="0.13"/>
@@ -258,17 +259,19 @@
         <line x1="1340" y1="300" x2="1400" y2="220" stroke="#00bcd4" stroke-width="1.5" opacity="0.10"/>
         <circle cx="1400" cy="220" r="5" fill="#40c4ff" opacity="0.13"/>
         <line x1="1240" y1="260" x2="1400" y2="220" stroke="#00bcd4" stroke-width="1.5" opacity="0.08"/>
-      </svg>
-        <h2>Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε εμείς μαζί σου!</h2>
-        <form id="orderForm" action="https://formspree.io/f/xblynayz" method="POST">
-          <input type="text" name="name" id="form-name" placeholder="Ονοματεπώνυμο" required>
-          <input type="email" name="email" id="form-email" placeholder="Email" required>
-          <input type="hidden" name="selected_template" id="selected_template">
-          <input type="number" name="age" id="form-age" placeholder="Ηλικία (προαιρετικό)" min="14" max="100">
-          <textarea name="bio" id="form-bio" placeholder="Σύντομο bio (π.χ. τι κάνεις, τι έχεις σπουδάσει κλπ)"></textarea>
-          <textarea name="purpose" id="form-purpose" placeholder="Πού σκοπεύεις να χρησιμοποιήσεις το CV site; (LinkedIn, εύρεση εργασίας, προσωπικό blog...)"></textarea>
-          <button type="submit" id="form-submit">Αποστολή</button>
-        </form>
+        </svg>
+      <div class="container">
+        <h2 style="color: #fff">Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε εμείς μαζί σου!</h2>
+          <form id="orderForm" action="https://formspree.io/f/xblynayz" method="POST">
+            <input type="text" name="name" id="form-name" placeholder="Ονοματεπώνυμο" required>
+            <input type="email" name="email" id="form-email" placeholder="Email" required>
+            <input type="hidden" name="selected_template" id="selected_template">
+            <input type="number" name="age" id="form-age" placeholder="Ηλικία (προαιρετικό)" min="14" max="100">
+            <textarea name="bio" id="form-bio" placeholder="Σύντομο bio (π.χ. τι κάνεις, τι έχεις σπουδάσει κλπ)"></textarea>
+            <textarea name="purpose" id="form-purpose" placeholder="Πού σκοπεύεις να χρησιμοποιήσεις το CV site; (LinkedIn, εύρεση εργασίας, προσωπικό blog...)"></textarea>
+            <button type="submit" id="form-submit">Αποστολή</button>
+          </form>
+        </div>
       </section>
 
       <section id="faq" data-aos="fade-up">
@@ -346,43 +349,42 @@
 
       <div id="footer-placeholder"></div>
 
-        <div id="cartPopup" style="
-          position: fixed;
-          right: 20px;
-          top: 70px;
-          background: white;
-          border: 1px solid #ccc;
-          border-radius: 12px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-          padding: 16px;
-          width: 300px;
-          z-index: 999;
-          display: none;
-          font-family: 'Inter', sans-serif;
-        ">
-          <h3 style="margin-top: 0;">🛒 Επιλογές σου</h3>
-          <p><strong>Template:</strong> <span id="popupTemplate">–</span></p>
-          <p><strong>Πακέτο:</strong> <span id="popupPlan">–</span></p>
+      <div id="cartPopup" style="
+        position: fixed;
+        right: 20px;
+        top: 70px;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        padding: 16px;
+        width: 300px;
+        z-index: 999;
+        display: none;
+        font-family: 'Inter', sans-serif;
+      ">
+        <h3 style="margin-top: 0;">🛒 Επιλογές σου</h3>
+        <p><strong>Template:</strong> <span id="popupTemplate">–</span></p>
+        <p><strong>Πακέτο:</strong> <span id="popupPlan">–</span></p>
 
-          <div style="margin-top: 12px; display: flex; justify-content: space-between;">
-            <a href="#form" onclick="toggleCart()" style="
-              background-color: #0d47a1;
-              color: white;
-              padding: 8px 12px;
-              border-radius: 6px;
-              text-decoration: none;
-              font-weight: bold;
-            ">Συμπλήρωσε Φόρμα</a>
-            <button onclick="clearCart()" style="
-              background: none;
-              border: none;
-              color: #ff5252;
-              font-weight: bold;
-              cursor: pointer;
-            ">✖ Καθαρισμός</button>
-          </div>
+        <div style="margin-top: 12px; display: flex; justify-content: space-between;">
+          <a href="#form" onclick="toggleCart()" style="
+            background-color: #0d47a1;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+          ">Συμπλήρωσε Φόρμα</a>
+          <button onclick="clearCart()" style="
+            background: none;
+            border: none;
+            color: #ff5252;
+            font-weight: bold;
+            cursor: pointer;
+          ">✖ Καθαρισμός</button>
         </div>
-
+      </div>
 
       <div id="chatbot-button">💬 <span id="chatbot-open">Βοήθεια;</span></div>
 
