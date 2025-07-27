@@ -169,19 +169,22 @@
           <div class="template-grid">
 
               <div class="template-card" data-template-url="templates/template1/index.html">
-                <img src="assets/img/template1.png" alt="Template 1" class="template-preview">
-                <div class="button-group">
-                    <button onclick="previewTemplate('templates/template1/index.html')">🔍 Preview</button>
-                    <button onclick="addToCart('template1')" class="choose-btn">🛒Επίλεξε</button>
+                <div class="template-preview-wrapper">
+                  <img src="assets/img/template1.png" alt="Template 1" class="template-preview">
                 </div>
-                <p id="availableboth" class="template-note">Διαθέσιμο και στα δύο πακέτα</p>
-
+                <div class="button-group">
+                  <button class="preview-btn">🔍 Preview</button>
+                  <button onclick="addToCart('template1')" class="choose-btn">🛒Επίλεξε</button>
+                </div>
+                <p class="template-note">Διαθέσιμο και στα δύο πακέτα</p>
               </div>
 
               <div class="template-card" data-template-url="templates/template2/index.html">
+                <div class="template-preview-wrapper">
                 <img src="assets/img/template2.png" alt="Template 2" class="template-preview">
+                </div>
                 <div class="button-group">
-                    <button onclick="previewTemplate('templates/template2/index.html')">🔍 Preview</button>
+                    <button class="preview-btn">🔍 Preview</button>
                     <button onclick="addToCart('template2')" class="choose-btn">🛒Επίλεξε</button>
                 </div>
                 <p id="availablebasic" class="template-note">Διαθέσιμο μόνο στο BASIC</p>
@@ -190,7 +193,7 @@
               <div class="template-card" data-template-url="templates/template3/index.html">
                 <img src="assets/img/template3.png" alt="Template 3" class="template-preview">
                 <div class="button-group">
-                    <button onclick="previewTemplate('templates/template3/index.html')">🔍 Preview</button>
+                    <button class="preview-btn">🔍 Preview</button>
                     <button onclick="addToCart('template3')" class="choose-btn">🛒Επίλεξε</button>
                 </div>
                 <p id="availablebasic2" class="template-note">Διαθέσιμο μόνο στο BASIC</p>
@@ -239,46 +242,13 @@
         </div>
       </section>
 
-      <section id="form" data-aos="fade-up" class="section-colored network-section-bg">
-        <svg class="network-bg" width="100%" height="100%" viewBox="0 0 1440 320" preserveAspectRatio="none">
-        <!-- Πάνω αριστερά -->
-        <circle cx="80" cy="40" r="10" fill="#40c4ff" opacity="0.18"/>
-        <circle cx="180" cy="90" r="7" fill="#00bcd4" opacity="0.13"/>
-        <line x1="80" y1="40" x2="180" y2="90" stroke="#40c4ff" stroke-width="1.5" opacity="0.13"/>
-        <line x1="80" y1="40" x2="60" y2="140" stroke="#00bcd4" stroke-width="1.5" opacity="0.10"/>
-        <circle cx="60" cy="140" r="6" fill="#40c4ff" opacity="0.13"/>
-        <line x1="180" y1="90" x2="60" y2="140" stroke="#00bcd4" stroke-width="1.5" opacity="0.08"/>
-
-        <!-- Πάνω δεξιά -->
-        <circle cx="1360" cy="50" r="9" fill="#40c4ff" opacity="0.16"/>
-        <circle cx="1280" cy="100" r="7" fill="#00bcd4" opacity="0.13"/>
-        <line x1="1360" y1="50" x2="1280" y2="100" stroke="#40c4ff" stroke-width="1.5" opacity="0.13"/>
-        <line x1="1360" y1="50" x2="1400" y2="140" stroke="#00bcd4" stroke-width="1.5" opacity="0.10"/>
-        <circle cx="1400" cy="140" r="6" fill="#40c4ff" opacity="0.13"/>
-        <line x1="1280" y1="100" x2="1400" y2="140" stroke="#00bcd4" stroke-width="1.5" opacity="0.08"/>
-
-        <!-- Κάτω αριστερά -->
-        <circle cx="100" cy="300" r="8" fill="#00bcd4" opacity="0.15"/>
-        <circle cx="200" cy="260" r="6" fill="#40c4ff" opacity="0.13"/>
-        <line x1="100" y1="300" x2="200" y2="260" stroke="#40c4ff" stroke-width="1.5" opacity="0.13"/>
-        <line x1="100" y1="300" x2="60" y2="220" stroke="#00bcd4" stroke-width="1.5" opacity="0.10"/>
-        <circle cx="60" cy="220" r="5" fill="#40c4ff" opacity="0.13"/>
-        <line x1="200" y1="260" x2="60" y2="220" stroke="#00bcd4" stroke-width="1.5" opacity="0.08"/>
-
-        <!-- Κάτω δεξιά -->
-        <circle cx="1340" cy="300" r="8" fill="#00bcd4" opacity="0.15"/>
-        <circle cx="1240" cy="260" r="6" fill="#40c4ff" opacity="0.13"/>
-        <line x1="1340" y1="300" x2="1240" y2="260" stroke="#40c4ff" stroke-width="1.5" opacity="0.13"/>
-        <line x1="1340" y1="300" x2="1400" y2="220" stroke="#00bcd4" stroke-width="1.5" opacity="0.10"/>
-        <circle cx="1400" cy="220" r="5" fill="#40c4ff" opacity="0.13"/>
-        <line x1="1240" y1="260" x2="1400" y2="220" stroke="#00bcd4" stroke-width="1.5" opacity="0.08"/>
-        </svg>
-      <div class="container">
-        <h2 style="color: #fff">Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε εμείς μαζί σου!</h2>
-        <div id="formSelectionSummary" style="background:#e3f2fd; color:#1565c0; padding:10px 18px; border-radius:6px; margin-bottom:16px; max-width:340px; margin-left:auto; margin-right:auto;">
-          Δεν έχεις επιλέξει ακόμα template ή πακέτο.
-        </div>
-          <form id="orderForm" action="https://formspree.io/f/xblynayz" method="POST">
+      <section id="form" data-aos="fade-up" class="cv-form-section-bg">
+        <div class="container">
+          <h2 style="color: black;"> Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε εμείς μαζί σου!</h2>
+          <div id="formSelectionSummary">
+            Δεν έχεις επιλέξει ακόμα template ή πακέτο.
+          </div>
+          <form id="orderForm" class="cv-form" action="https://formspree.io/f/xblynayz" method="POST">
             <input type="text" name="name" id="form-name" placeholder="Ονοματεπώνυμο" required>
             <input type="email" name="email" id="form-email" placeholder="Email" required>
             <input type="hidden" name="selected_template" id="selected_template">

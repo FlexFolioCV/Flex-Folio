@@ -385,62 +385,94 @@ section {
 
 
 /* Form Section */
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 500px;
-    margin: auto;
-}
-
-form input, form textarea {
-    padding: 0.8rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-
-form button {
-  width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: #0d47a1;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
-  box-shadow: none;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #1565c0;
-}
-
-form button:active {
+.cv-form-section-bg {
   background-color: #073047;
-  transform: scale(0.99);
-}
-#form-submit {
+  padding: 60px 0 0 0;
+  position: relative;
+  min-height: 100vh;
   color: #fff;
-  background: #40c4ff; /* ή ό,τι χρώμα θες */
-  border: none;
-  padding: 0.7em 1.5em;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-#form-submit:hover {
-  background: #0091ea;
+  overflow: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
+.network-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 320px;
+  pointer-events: none;
 }
+
+.cv-form-section-bg .container {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 24px 32px 24px;
+  background: rgba(0,0,0,0.10);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(7,48,71,0.18);
+}
+
+.cv-form-section-bg h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+#formSelectionSummary {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #b3e5fc;
+  font-size: 1rem;
+}
+
+.cv-form input,
+.cv-form textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #073047;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px 0 rgba(7,48,71,0.08);
+}
+
+.cv-form input:focus,
+.cv-form textarea:focus {
+  background: #e3f6fd;
+  outline: none;
+}
+
+.cv-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.cv-form button[type="submit"] {
+  width: 100%;
+  padding: 14px 0;
+  background: #40c4ff;
+  color: #073047;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cv-form button[type="submit"]:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
 
 
 
@@ -692,41 +724,185 @@ html {
 
 
 /* Templates */
-
 #templates.section-colored {
-  background-color: #073047; /* πιο ανοιχτό από το #cecece αν θες διαφορά */
+  background: #0e4d6b;
   width: 100%;
-  padding: 60px 20px;
+  padding: 40px 0 28px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin: 32px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#templates .network-bg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 #templates .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-#form.section-colored {
   position: relative;
-  overflow: hidden;
-  background-color: #073047;
-}
-
-#form .container {
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.2rem;
 }
 
-#pricing.section-colored {
-  background-color: #efffff; /* πιο ανοιχτό από το #cecece αν θες διαφορά */
+#templates h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+#templates h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 3px;
+  background-color: #00bcd4;
+  border-radius: 2px;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.template-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 1rem 0.8rem 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.14s, transform 0.14s;
+  position: relative;
+  min-height: 220px;
+  border: 1px solid #e0e7ef;
+}
+
+.template-card:hover {
+  box-shadow: 0 4px 16px 0 rgba(0,188,212,0.08);
+  transform: translateY(-2px) scale(1.012);
+  border-color: #00bcd4;
+}
+
+.template-preview-wrapper {
   width: 100%;
-  padding: 60px 20px;
+  aspect-ratio: 4/3;
+  max-width: 180px;
+  margin-bottom: 0.8rem;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #f6fafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#pricing .container {
-  max-width: 1200px;
-  margin: 0 auto;
+.template-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 
+.button-group button {
+  background: #0e4d6b;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 0.4rem 1rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s, box-shadow 0.16s;
+  box-shadow: none;
+  outline: none;
+}
+
+.button-group button:hover,
+.button-group .choose-btn:hover {
+  background: #00bcd4;
+  color: #0e4d6b;
+}
+
+.choose-btn {
+  background: #00bcd4;
+  color: #0e4d6b;
+}
+
+.choose-btn:hover {
+  background: #0e4d6b;
+  color: #fff;
+}
+
+.template-note {
+  font-size: 0.95rem;
+  color: #00bcd4;
+  background: #e0f7fa;
+  border-radius: 6px;
+  padding: 0.22rem 0.7rem;
+  margin-top: auto;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+}
+
+#selectedDisplay {
+  color: #fff;
+  text-align: center;
+  font-size: 1.03rem;
+  margin-top: 1.2rem;
+  letter-spacing: 0.2px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .template-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.7rem;
+  }
+  .template-card {
+    min-height: 160px;
+    padding: 0.7rem 0.4rem 0.7rem 0.4rem;
+  }
+  #templates .container {
+    padding: 0 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #templates.section-colored {
+    padding: 20px 0 12px 0;
+    border-radius: 0;
+  }
+  .template-card {
+    min-height: 120px;
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+  .template-preview {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+  }
+}
 
 
 

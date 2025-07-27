@@ -184,3 +184,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+document.querySelectorAll('.preview-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation(); // Για να μην γίνει διπλό click αν είναι μέσα στην κάρτα
+    this.closest('.template-card').click();
+  });
+});
