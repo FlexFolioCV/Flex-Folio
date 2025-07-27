@@ -93,19 +93,32 @@
     <p id="typed-effect">Επαγγελματικό, δυναμικό, επεξεργάσιμο</p>
   </header>
 
-      <section id="how-it-works" class="section-colored" data-aos="fade-up">
+      <section id="how-it-works" class="how-it-works-fun" data-aos="fade-up">
         <div class="container">
           <h2>Πώς λειτουργεί;</h2>
-            <p style="max-width: 800px; margin: auto; font-size: 1.1rem;">
-              Ήρθε η ώρα να αποκτήσεις το δικό σου επαγγελματικό CV site.  
-              Μέσα από λίγα απλά βήματα, μπορείς να το διαμορφώσεις σύμφωνα με τις ανάγκες σου.
-                <br/><br/>
-                1️⃣ Επίλεξε το σχέδιο (template) που σου αρέσει  
-                2️⃣ Διάλεξε το πακέτο που σου ταιριάζει (BASIC ή PRO+)  
-                3️⃣ Συμπλήρωσε τη φόρμα με τα στοιχεία σου  
-                <br/><br/>
-              Σύντομα θα επικοινωνήσουμε μαζί σου με όλες τις λεπτομέρειες και οδηγίες για την υλοποίηση.
-            </p>
+          <div class="steps-wrapper">
+            <div class="step">
+              <span class="step-icon">🎨</span>
+              <div>
+                <strong>Επίλεξε το σχέδιο</strong> (template) που σου αρέσει
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-icon">💼</span>
+              <div>
+                <strong>Διάλεξε το πακέτο</strong> που σου ταιριάζει (BASIC ή Standard)
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-icon">📝</span>
+              <div>
+                <strong>Συμπλήρωσε τη φόρμα</strong> με τα στοιχεία σου
+              </div>
+            </div>
+          </div>
+          <p class="how-it-works-note">
+            Σύντομα θα επικοινωνήσουμε μαζί σου με όλες τις λεπτομέρειες και οδηγίες για την υλοποίηση.
+          </p>
         </div>
       </section>
 
@@ -171,7 +184,7 @@
                     <button onclick="previewTemplate('templates/template2/index.html')">🔍 Preview</button>
                     <button onclick="addToCart('template2')" class="choose-btn">🛒Επίλεξε</button>
                 </div>
-                <p id="availablebasic" class="template-note">Διαθέσιμο μόνο στο BACIC</p>
+                <p id="availablebasic" class="template-note">Διαθέσιμο μόνο στο BASIC</p>
               </div>
 
               <div class="template-card" data-template-url="templates/template3/index.html">
@@ -180,7 +193,7 @@
                     <button onclick="previewTemplate('templates/template3/index.html')">🔍 Preview</button>
                     <button onclick="addToCart('template3')" class="choose-btn">🛒Επίλεξε</button>
                 </div>
-                <p id="availablebasic2" class="template-note">Διαθέσιμο μόνο στο BACIC</p>
+                <p id="availablebasic2" class="template-note">Διαθέσιμο μόνο στο BASIC</p>
               </div>
 
           </div>
@@ -191,38 +204,32 @@
       <section id="pricing" data-aos="fade-up">
         <h2 id="pricing-title" style="text-align:center; margin-bottom: 40px;">Πακέτα</h2>
         <div class="container">
-          
-            <div class="pricing-grid">
-
-                <div class="pricing-card">
-                  <div class="price-tag">179€</div>
-                  <h3>BASIC</h3>
-                  <ul>
-                    <li>Static website</li>
-                    <li>Mobile friendly</li>
-                    <li>5 free mini changes</li>
-                    <li>Domain not included*</li>
-                  </ul>
-                  <a  class="order-button" id="order-basic" onclick="addToCart('template1')">🛒 Επίλεξε</a>
-                </div>
-
-                <div class="pricing-card featured">
-                  <div class="price-tag">299€</div>
-                  <h3>PRO+</h3>
-                  <ul>
-                    <li>Editable site</li>
-                    <li>30-day support</li>
-                    <li>Unlimited edits</li>
-                    <li>Domain included(1y)**</li>
-                  </ul>
-                  <a  class="order-button" id="order-pro" onclick="addToCart('template2')">🛒 Επίλεξε</a>
-                </div>
-
-
+          <div class="pricing-grid lively-pricing-grid">
+            <div class="pricing-card lively-pricing-card">
+              <div class="price-tag lively-price-tag">179€</div>
+              <h3>BASIC</h3>
+              <ul>
+                <li>Static website</li>
+                <li>Mobile friendly</li>
+                <li>5 free mini changes</li>
+                <li>Domain not included*</li>
+              </ul>
+              <a class="order-button lively-order-button" id="order-basic" onclick="addToCart('template1')">🛒 Επίλεξε</a>
             </div>
-          <p id="selectedPlanDisplay" style="text-align: center; margin-top: 20px; font-size: 1rem; color: #2e7d32;">
-          
-        </p>
+            <div class="pricing-card featured lively-pricing-card lively-featured">
+              <div class="lively-badge">Best Value</div>
+              <div class="price-tag lively-price-tag">299€</div>
+              <h3>STANDARD</h3>
+              <ul>
+                <li>Editable site</li>
+                <li>30-day support</li>
+                <li>Unlimited edits</li>
+                <li>Domain included(1y)**</li>
+              </ul>
+              <a class="order-button lively-order-button" id="order-pro" onclick="addToCart('template2')">🛒 Επίλεξε</a>
+            </div>
+          </div>
+          <p id="selectedPlanDisplay" style="text-align: center; margin-top: 20px; font-size: 1rem; color: #2e7d32;"></p>
         </div>
       </section>
 
@@ -282,16 +289,16 @@
             ❓ <strong>Πόσο κοστίζει ένα CV site;</strong>
           </div>
           <div class="faq-answer">
-            <p>Οι τιμές ξεκινούν από 45€, ανάλογα με τις απαιτήσεις και τις λειτουργίες.</p>
+            <p>Υπάρχουν δύο βασικά πακέτα: το BASIC στα 179€ (στατικό site, mobile friendly, 5 δωρεάν μικροαλλαγές) και το Standard στα 299€ (δυνατότητα επεξεργασίας, απεριόριστες αλλαγές, domain για 1 χρόνο και υποστήριξη 30 ημερών). Έτσι μπορείς να διαλέξεις αυτό που σου ταιριάζει καλύτερα!</p>
           </div>
         </div>
 
         <div class="faq-item" onclick="toggleFaq(this)">
           <div class="faq-question">
-            ❓ <strong>Σε πόσες μέρες θα είναι έτοιμο;</strong>
+            ❓ <strong>Σε πόσες μέρες θα είναι έτοιμο το site μου;</strong>
           </div>
           <div class="faq-answer">
-            <p>Μέσα σε 1–4 εργάσιμες μέρες από την υποβολή της φόρμας.</p>
+            <p>Συνήθως το site σου είναι έτοιμο μέσα σε 1 έως 4 εργάσιμες ημέρες από τη στιγμή που θα μας στείλεις τα απαραίτητα στοιχεία και υλικό. Ανάλογα με το πακέτο και τις επιπλέον απαιτήσεις, ο χρόνος μπορεί να διαφέρει ελάχιστα.</p>
           </div>
         </div>
 
@@ -300,7 +307,7 @@
             ❓ <strong>Μπορώ να προσαρμόσω το template;</strong>
           </div>
           <div class="faq-answer">
-            <p>Φυσικά! Ανάλογα με το πακέτο που θα διαλέξεις, μπορείς να επεξεργαστείς ό,τι θέλεις(Κείμενα, εικόνες, χρώματα γραμματοσειρές).</p>
+            <p>Βεβαίως! Μπορείς να αλλάξεις κείμενα, φωτογραφίες, χρώματα και γραμματοσειρές. Αν επιλέξεις το Standard πακέτο, έχεις και τη δυνατότητα να κάνεις όσες αλλαγές θέλεις, ακόμα και μετά την παράδοση, μέσω του dashboard ή με τη βοήθειά μας.</p>
           </div>
         </div>
 
@@ -309,7 +316,7 @@
             ❓ <strong>Θα μπορώ να επεξεργάζομαι το site μόνος/η μου;</strong>
           </div>
           <div class="faq-answer">
-            <p>Ναι! Σου παρέχουμε απλό dashboard ή οδηγίες για να ενημερώνεις το περιεχόμενο χωρίς να χρειάζεσαι γνώσεις προγραμματισμού.</p>
+            <p>Ναι! Με το Standard+ πακέτο έχεις πρόσβαση σε εύχρηστο dashboard για να ενημερώνεις το περιεχόμενο του site σου όποτε θέλεις, χωρίς να χρειάζεσαι τεχνικές γνώσεις. Για το BASIC πακέτο, μπορείς να μας ζητήσεις μικρές αλλαγές δωρεάν (έως 5 φορές).</p>
           </div>
         </div>
 
@@ -318,16 +325,25 @@
             ❓ <strong>Τι χρειάζεται να στείλω για να ξεκινήσει η κατασκευή;</strong>
           </div>
           <div class="faq-answer">
-            <p>Αρκεί να συμπληρώσεις τη φόρμα με τα βασικά στοιχεία. Μπορείς να προσθέσεις bio, φωτογραφία, στοιχεία επικοινωνίας και ό,τι άλλο θέλεις.</p>
+            <p>Αρκεί να συμπληρώσεις τη φόρμα ενδιαφέροντος με τα βασικά στοιχεία σου. Θα χρειαστούμε το βιογραφικό σου, μια φωτογραφία, στοιχεία επικοινωνίας και ό,τι άλλο θέλεις να εμφανίζεται στο site σου. Όσο πιο πλήρη τα στοιχεία, τόσο πιο γρήγορα ξεκινάμε!</p>
           </div>
         </div>
 
         <div class="faq-item" onclick="toggleFaq(this)">
           <div class="faq-question">
-            ❓ <strong>Μπορώ να το συνδέσω με το LinkedIn ή το domain μου;</strong>
+            ❓ <strong>Μπορώ να αγοράσω εγώ domain και να το συνδέσετε εσείς;</strong>
           </div>
           <div class="faq-answer">
-            <p>Βεβαίως. Υποστηρίζουμε σύνδεση με LinkedIn, GitHub, ακόμα και με το προσωπικό σου domain εφόσον έχεις.</p>
+            <p>Φυσικά! Αν έχεις ήδη domain ή θέλεις να το αγοράσεις μόνος/η σου, μπορούμε να το συνδέσουμε εμείς με το site σου, χωρίς επιπλέον χρέωση. Εναλλακτικά, στο Standard+ πακέτο αναλαμβάνουμε εμείς την αγορά και διαχείριση του domain για τον πρώτο χρόνο.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ❓ <strong>Μπορώ να συνδέσω το site με LinkedIn ή άλλα social;</strong>
+          </div>
+          <div class="faq-answer">
+            <p>Ναι, μπορείς να προσθέσεις συνδέσμους για LinkedIn, GitHub, email, ακόμα και το προσωπικό σου domain. Έτσι, οι επισκέπτες θα βρίσκουν εύκολα όλα τα προφίλ και τα στοιχεία σου.</p>
           </div>
         </div>
 
@@ -336,7 +352,7 @@
             ❓ <strong>Παρέχετε υποστήριξη μετά την παράδοση;</strong>
           </div>
           <div class="faq-answer">
-            <p>Ναι, μπορείς να επικοινωνήσεις για μικρές αλλαγές ή υποστήριξη έως και 30 ημέρες μετά την παράδοση. Μετά από αυτό υπάρχει διαθέσιμο πακέτο υποστήριξης.</p>
+            <p>Με το Standard πακέτο έχεις δωρεάν υποστήριξη για 30 ημέρες μετά την παράδοση για οποιαδήποτε αλλαγή ή απορία. Μετά το διάστημα αυτό, μπορείς να επιλέξεις πακέτο υποστήριξης ή να μας ζητήσεις μεμονωμένες υπηρεσίες.</p>
           </div>
         </div>
       </section>

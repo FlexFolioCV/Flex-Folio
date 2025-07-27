@@ -31,15 +31,15 @@
     "choose":"🛒Προσθήκη",
     "plans":"Πακέτα",
     "availableboth":"Διαθέσιμο και στα δύο πακέτα",
-    "availablebasic":"Διαθέσιμο μόνο στο BACIC",
-    "availablebasic2":"Διαθέσιμο μόνο στο BACIC"
+    "availablebasic":"Διαθέσιμο μόνο στο BASIC",
+    "availablebasic2":"Διαθέσιμο μόνο στο BASIC"
 
   },
   "en": {
     "title": "Choose your personal CV website",
     "subtitle": "Professional, dynamic, editable",
     "how_it_works": "Who we are & what we offer;",
-    "how_it_works_desc": "We are a team that helps you get your own professional CV site, without technical knowledge, without stress, and at an affordable price.\n\nAt FlexFolio, we combine low cost with professional quality.\n\nIt's time to get your own professional CV site.\nThrough just a few simple steps, you can customize it the way you want.\n\n1️⃣ Choose the template you like\n2️⃣ Pick the package that suits you (BASIC or PRO+)\n3️⃣ Fill out the form with your details\n\nWe’ll contact you shortly with all the details and instructions for the implementation.",
+    "how_it_works_desc": "We are a team that helps you get your own professional CV site, without technical knowledge, without stress, and at an affordable price.\n\nAt FlexFolio, we combine low cost with professional quality.\n\nIt's time to get your own professional CV site.\nThrough just a few simple steps, you can customize it the way you want.\n\n1️⃣ Choose the template you like\n2️⃣ Pick the package that suits you (BASIC or STANDARD)\n3️⃣ Fill out the form with your details\n\nWe’ll contact you shortly with all the details and instructions for the implementation.",
     "select_template": "Choose one of the templates trusted by professionals",
     "form_title": "Fill out the form and we will contact you!",
     "submit": "Submit",

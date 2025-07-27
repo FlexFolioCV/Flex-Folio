@@ -12,7 +12,7 @@ function addToCart(templateId) {
 
   const planNames = {
     template1: "το πρώτο πακέτο (BASIC)",
-    template2: "το δεύτερο πακέτο (PRO+)",
+    template2: "το δεύτερο πακέτο (STANDARD)",
     template3: "το δεύτερο πακέτο (PRO+)"
   };
 
