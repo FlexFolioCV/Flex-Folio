@@ -70,7 +70,21 @@
 "footer_social": "Ακολουθήστε μας",
 "footer_terms": "Όροι Χρήσης",
 "footer_contact": "Επικοινωνία",
-"footer_copyright": "© 2025 FlexFolio. Με επιφύλαξη παντός δικαιώματος"
+"footer_copyright": "© 2025 FlexFolio. Με επιφύλαξη παντός δικαιώματος",
+"chatbot_purpose": "Για ποιο σκοπό χρειάζεσαι το site σου;",
+"chatbot_purpose_linkedin": "LinkedIn",
+"chatbot_purpose_job": "Εύρεση Εργασίας",
+"chatbot_purpose_portfolio": "Portfolio / Προσωπικό Blog",
+"chatbot_style": "Τι στυλ προτιμάς;",
+"chatbot_style_classic": "Κλασικό",
+"chatbot_style_modern": "Μοντέρνο",
+"chatbot_style_colorful": "Με χρώματα",
+"chatbot_suggestion1": "πρώτο σχέδιο",
+"chatbot_suggestion2": "δεύτερο σχέδιο",
+"chatbot_suggestion3": "τρίτο σχέδιο",
+"chatbot_result": "💡 Σου προτείνουμε το: <strong>{SUGGESTION}</strong>",
+"chatbot_thanks": "Ευχαριστώ!",
+"chatbot_selected": "✔️ Έχεις επιλέξει το: {SUGGESTION}"
 
   },
   "en": {
@@ -145,7 +159,21 @@
 "footer_social": "Follow us",
 "footer_terms": "Terms of Use",
 "footer_contact": "Contact",
-"footer_copyright": "© 2025 FlexFolio. All rights reserved"
+"footer_copyright": "© 2025 FlexFolio. All rights reserved",
+"chatbot_purpose": "What do you need your site for?",
+"chatbot_purpose_linkedin": "LinkedIn",
+"chatbot_purpose_job": "Job Search",
+"chatbot_purpose_portfolio": "Portfolio / Personal Blog",
+"chatbot_style": "What style do you prefer?",
+"chatbot_style_classic": "Classic",
+"chatbot_style_modern": "Modern",
+"chatbot_style_colorful": "Colorful",
+"chatbot_suggestion1": "first template",
+"chatbot_suggestion2": "second template",
+"chatbot_suggestion3": "third template",
+"chatbot_result": "💡 We suggest: <strong>{SUGGESTION}</strong>",
+"chatbot_thanks": "Thank you!",
+"chatbot_selected": "✔️ You have selected: {SUGGESTION}"
 
   }
 }
