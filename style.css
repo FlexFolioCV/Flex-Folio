@@ -154,11 +154,12 @@ section:not(.section-colored) {
   .topbar .nav-links {
     position: absolute;
     top: 60px;
+    left:0;
     right: 0;
     background: #fff;
     flex-direction: column;
     align-items: flex-start;
-    width: 100vw;
+    width: auto;
     display: none;
     padding: 1.2rem 1.5rem 1.2rem 1.2rem;
     border-top: 1px solid #e0e7ff;
@@ -448,7 +449,7 @@ section {
 
 .cv-form input,
 .cv-form textarea {
-  width: 100%;
+  width: 95%;
   margin-bottom: 14px;
   padding: 12px 14px;
   border: none;
