@@ -49,6 +49,8 @@ async function setLanguage(lang) {
     document.querySelectorAll('.faq-answer p')[5].textContent = t.faq_a6;
     document.querySelectorAll('.faq-answer p')[6].textContent = t.faq_a7;
     document.querySelectorAll('.faq-answer p')[7].textContent = t.faq_a8;
+
+    
     safeSetText("pricing-title", t.plans);
     safeSetText("chatbot-header", t.chatbot_header);
     safeSetText("chatbot-title", t.chatbot_title);
@@ -71,6 +73,16 @@ async function setLanguage(lang) {
     safeSetText("step1", t.step1);
     safeSetText("step2", t.step2);
     safeSetText("step3", t.step3);
+    safeSetText("footer-desc", t.footer_desc);
+    safeSetText("footer-quicklinks-title", t.footer_quicklinks);
+    safeSetText("footer-link-templates", t.footer_link_templates);
+    safeSetText("footer-link-pricing", t.footer_link_pricing);
+    safeSetText("footer-link-form", t.footer_link_form);
+    safeSetText("footer-link-faq", t.footer_link_faq);
+    safeSetText("footer-social-title", t.footer_social);
+    safeSetText("footer-link-terms", t.footer_terms);
+    safeSetText("footer-link-contact", t.footer_contact);
+    safeSetText("footer-copyright", t.footer_copyright);
 
     // Όλα τα buttons επιλογής
     document.querySelectorAll(".choose-btn").forEach(btn => {

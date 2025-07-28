@@ -60,7 +60,17 @@
 "faq_a7": "Ναι, μπορείς να προσθέσεις συνδέσμους για LinkedIn, GitHub, email, ακόμα και το προσωπικό σου domain. Έτσι, οι επισκέπτες θα βρίσκουν εύκολα όλα τα προφίλ και τα στοιχεία σου.",
 
 "faq_q8": "Παρέχετε υποστήριξη μετά την παράδοση;",
-"faq_a8": "Με το Standard πακέτο έχεις δωρεάν υποστήριξη για 30 ημέρες μετά την παράδοση για οποιαδήποτε αλλαγή ή απορία. Μετά το διάστημα αυτό, μπορείς να επιλέξεις πακέτο υποστήριξης ή να μας ζητήσεις μεμονωμένες υπηρεσίες."
+"faq_a8": "Με το Standard πακέτο έχεις δωρεάν υποστήριξη για 30 ημέρες μετά την παράδοση για οποιαδήποτε αλλαγή ή απορία. Μετά το διάστημα αυτό, μπορείς να επιλέξεις πακέτο υποστήριξης ή να μας ζητήσεις μεμονωμένες υπηρεσίες.",
+"footer_desc": "Επαγγελματικά CV sites στα ελληνικά. Απλά, δυναμικά, επεξεργάσιμα.",
+"footer_quicklinks": "Γρήγοροι Σύνδεσμοι",
+"footer_link_templates": "Σχέδια",
+"footer_link_pricing": "Πακέτα",
+"footer_link_form": "Φόρμα Παραγγελίας",
+"footer_link_faq": "Συχνές Ερωτήσεις",
+"footer_social": "Ακολουθήστε μας",
+"footer_terms": "Όροι Χρήσης",
+"footer_contact": "Επικοινωνία",
+"footer_copyright": "© 2025 FlexFolio. Με επιφύλαξη παντός δικαιώματος"
 
   },
   "en": {
@@ -125,7 +135,17 @@
 "faq_a7": "Yes, you can add links to LinkedIn, GitHub, email, or even your personal domain. This way, visitors can easily find all your profiles and contact info.",
 
 "faq_q8": "Do you provide support after delivery?",
-"faq_a8": "With the Standard package, you get free support for 30 days after delivery for any changes or questions. After that, you can choose a support plan or request individual services as needed."
+"faq_a8": "With the Standard package, you get free support for 30 days after delivery for any changes or questions. After that, you can choose a support plan or request individual services as needed.",
+"footer_desc": "Professional CV sites in Greek. Simple, dynamic, editable.",
+"footer_quicklinks": "Quick Links",
+"footer_link_templates": "Templates",
+"footer_link_pricing": "Plans",
+"footer_link_form": "Order Form",
+"footer_link_faq": "FAQ",
+"footer_social": "Follow us",
+"footer_terms": "Terms of Use",
+"footer_contact": "Contact",
+"footer_copyright": "© 2025 FlexFolio. All rights reserved"
 
   }
 }
