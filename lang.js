@@ -27,7 +27,28 @@ async function setLanguage(lang) {
     document.querySelector('#selectedDisplay').textContent = t.no_template;
     document.querySelector('#form h2').textContent = t.form_title;
     document.querySelector('#orderForm button').textContent = t.submit;
+    // Τίτλος FAQ
+    document.querySelector('#faq h2').textContent = t.faq_title;
 
+    // Ερωτήσεις
+    document.querySelectorAll('.faq-question')[0].innerHTML = "❓ <strong>" + t.faq_q1 + "</strong>";
+    document.querySelectorAll('.faq-question')[1].innerHTML = "❓ <strong>" + t.faq_q2 + "</strong>";
+    document.querySelectorAll('.faq-question')[2].innerHTML = "❓ <strong>" + t.faq_q3 + "</strong>";
+    document.querySelectorAll('.faq-question')[3].innerHTML = "❓ <strong>" + t.faq_q4 + "</strong>";
+    document.querySelectorAll('.faq-question')[4].innerHTML = "❓ <strong>" + t.faq_q5 + "</strong>";
+    document.querySelectorAll('.faq-question')[5].innerHTML = "❓ <strong>" + t.faq_q6 + "</strong>";
+    document.querySelectorAll('.faq-question')[6].innerHTML = "❓ <strong>" + t.faq_q7 + "</strong>";
+    document.querySelectorAll('.faq-question')[7].innerHTML = "❓ <strong>" + t.faq_q8 + "</strong>";
+
+    // Απαντήσεις
+    document.querySelectorAll('.faq-answer p')[0].textContent = t.faq_a1;
+    document.querySelectorAll('.faq-answer p')[1].textContent = t.faq_a2;
+    document.querySelectorAll('.faq-answer p')[2].textContent = t.faq_a3;
+    document.querySelectorAll('.faq-answer p')[3].textContent = t.faq_a4;
+    document.querySelectorAll('.faq-answer p')[4].textContent = t.faq_a5;
+    document.querySelectorAll('.faq-answer p')[5].textContent = t.faq_a6;
+    document.querySelectorAll('.faq-answer p')[6].textContent = t.faq_a7;
+    document.querySelectorAll('.faq-answer p')[7].textContent = t.faq_a8;
     safeSetText("pricing-title", t.plans);
     safeSetText("chatbot-header", t.chatbot_header);
     safeSetText("chatbot-title", t.chatbot_title);

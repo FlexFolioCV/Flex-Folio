@@ -35,7 +35,32 @@
     "plans":"Πακέτα",
     "availableboth":"Διαθέσιμο και στα δύο πακέτα",
     "availablebasic":"Διαθέσιμο μόνο στο BASIC",
-    "availablebasic2":"Διαθέσιμο μόνο στο BASIC"
+    "availablebasic2":"Διαθέσιμο μόνο στο BASIC",
+    "faq_title": "Συχνές Ερωτήσεις",
+
+"faq_q1": "Πόσο κοστίζει ένα CV site;",
+"faq_a1": "Υπάρχουν δύο βασικά πακέτα: το BASIC στα 179€ (στατικό site, mobile friendly, 5 δωρεάν μικροαλλαγές) και το Standard στα 299€ (δυνατότητα επεξεργασίας, απεριόριστες αλλαγές, domain για 1 χρόνο και υποστήριξη 30 ημερών). Έτσι μπορείς να διαλέξεις αυτό που σου ταιριάζει καλύτερα!",
+
+"faq_q2": "Σε πόσες μέρες θα είναι έτοιμο το site μου;",
+"faq_a2": "Συνήθως το site σου είναι έτοιμο μέσα σε 1 έως 4 εργάσιμες ημέρες από τη στιγμή που θα μας στείλεις τα απαραίτητα στοιχεία και υλικό. Ανάλογα με το πακέτο και τις επιπλέον απαιτήσεις, ο χρόνος μπορεί να διαφέρει ελάχιστα.",
+
+"faq_q3": "Μπορώ να προσαρμόσω το template;",
+"faq_a3": "Βεβαίως! Μπορείς να αλλάξεις κείμενα, φωτογραφίες, χρώματα και γραμματοσειρές. Αν επιλέξεις το Standard πακέτο, έχεις και τη δυνατότητα να κάνεις όσες αλλαγές θέλεις, ακόμα και μετά την παράδοση, μέσω του dashboard ή με τη βοήθειά μας.",
+
+"faq_q4": "Θα μπορώ να επεξεργάζομαι το site μόνος/η μου;",
+"faq_a4": "Ναι! Με το Standard+ πακέτο έχεις πρόσβαση σε εύχρηστο dashboard για να ενημερώνεις το περιεχόμενο του site σου όποτε θέλεις, χωρίς να χρειάζεσαι τεχνικές γνώσεις. Για το BASIC πακέτο, μπορείς να μας ζητήσεις μικρές αλλαγές δωρεάν (έως 5 φορές).",
+
+"faq_q5": "Τι χρειάζεται να στείλω για να ξεκινήσει η κατασκευή;",
+"faq_a5": "Αρκεί να συμπληρώσεις τη φόρμα ενδιαφέροντος με τα βασικά στοιχεία σου. Θα χρειαστούμε το βιογραφικό σου, μια φωτογραφία, στοιχεία επικοινωνίας και ό,τι άλλο θέλεις να εμφανίζεται στο site σου. Όσο πιο πλήρη τα στοιχεία, τόσο πιο γρήγορα ξεκινάμε!",
+
+"faq_q6": "Μπορώ να αγοράσω εγώ domain και να το συνδέσετε εσείς;",
+"faq_a6": "Φυσικά! Αν έχεις ήδη domain ή θέλεις να το αγοράσεις μόνος/η σου, μπορούμε να το συνδέσουμε εμείς με το site σου, χωρίς επιπλέον χρέωση. Εναλλακτικά, στο Standard+ πακέτο αναλαμβάνουμε εμείς την αγορά και διαχείριση του domain για τον πρώτο χρόνο.",
+
+"faq_q7": "Μπορώ να συνδέσω το site με LinkedIn ή άλλα social;",
+"faq_a7": "Ναι, μπορείς να προσθέσεις συνδέσμους για LinkedIn, GitHub, email, ακόμα και το προσωπικό σου domain. Έτσι, οι επισκέπτες θα βρίσκουν εύκολα όλα τα προφίλ και τα στοιχεία σου.",
+
+"faq_q8": "Παρέχετε υποστήριξη μετά την παράδοση;",
+"faq_a8": "Με το Standard πακέτο έχεις δωρεάν υποστήριξη για 30 ημέρες μετά την παράδοση για οποιαδήποτε αλλαγή ή απορία. Μετά το διάστημα αυτό, μπορείς να επιλέξεις πακέτο υποστήριξης ή να μας ζητήσεις μεμονωμένες υπηρεσίες."
 
   },
   "en": {
@@ -74,7 +99,33 @@
     "plans":"Plans",
     "availableboth": "Available in both plans",
     "availablebasic": "Available only in BASIC",
-    "availablebasic2": "Available only in BASIC"
+    "availablebasic2": "Available only in BASIC",
+    
+    "faq_title": "Frequently Asked Questions",
+
+"faq_q1": "How much does a CV site cost?",
+"faq_a1": "There are two main packages: BASIC at €179 (static site, mobile friendly, 5 free minor edits) and Standard at €299 (editable, unlimited changes, 1-year domain, and 30 days support). So you can choose what suits you best!",
+
+"faq_q2": "How long will it take for my site to be ready?",
+"faq_a2": "Usually, your site is ready within 1 to 4 business days after you send us the necessary info and material. Depending on the package and any extra requirements, the time may vary slightly.",
+
+"faq_q3": "Can I customize the template?",
+"faq_a3": "Of course! You can change texts, photos, colors, and fonts. If you choose the Standard package, you can make as many changes as you want, even after delivery, through the dashboard or with our help.",
+
+"faq_q4": "Will I be able to edit the site myself?",
+"faq_a4": "Yes! With the Standard+ package, you get access to an easy-to-use dashboard to update your site content whenever you want, no technical skills needed. For the BASIC package, you can request up to 5 small changes for free.",
+
+"faq_q5": "What do I need to send to get started?",
+"faq_a5": "Just fill out the interest form with your basic info. We’ll need your CV, a photo, contact details, and anything else you want to show on your site. The more complete your info, the faster we can start!",
+
+"faq_q6": "Can I buy my own domain and have you connect it?",
+"faq_a6": "Absolutely! If you already have a domain or want to buy one yourself, we can connect it to your site at no extra cost. Alternatively, with the Standard+ package, we handle the purchase and management of your domain for the first year.",
+
+"faq_q7": "Can I link my site to LinkedIn or other socials?",
+"faq_a7": "Yes, you can add links to LinkedIn, GitHub, email, or even your personal domain. This way, visitors can easily find all your profiles and contact info.",
+
+"faq_q8": "Do you provide support after delivery?",
+"faq_a8": "With the Standard package, you get free support for 30 days after delivery for any changes or questions. After that, you can choose a support plan or request individual services as needed."
 
   }
 }

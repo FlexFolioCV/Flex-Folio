@@ -239,8 +239,11 @@
       <section id="form" data-aos="fade-up" class="cv-form-section-bg">
         <div class="container">
           <h2 style="color: black;"> Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε εμείς μαζί σου!</h2>
-          <div id="formSelectionSummary">
+          <div id="formSelectionSummary" style="color: black;">
             Δεν έχεις επιλέξει ακόμα template ή πακέτο.
+          </div>
+          <div id="formUnavailableMsg" style="display:none; color:#150d0d; text-align:center; margin-bottom:18px; font-weight:600;">
+            Οι παραγγελίες δεν είναι ακόμα διαθέσιμες. Θα είμαστε σύντομα κοντά σας! Ευχαριστούμε για το ενδιαφέρον σας. 😊
           </div>
           <form id="orderForm" class="cv-form" action="https://formspree.io/f/xblynayz" method="POST">
             <input type="text" name="name" id="form-name" placeholder="Ονοματεπώνυμο" required>
@@ -401,6 +404,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="main.js"></script>
+
 
 
 </body>

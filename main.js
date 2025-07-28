@@ -104,3 +104,10 @@ document.querySelectorAll('.topbar .nav-links a').forEach(link => {
     }
   });
 });
+
+
+
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('formUnavailableMsg').style.display = 'block';
+});
