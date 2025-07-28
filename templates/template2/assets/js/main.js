@@ -39,6 +39,21 @@
     });
 
   });
+    /**
+   * Close sidebar menu on link click (for customSidebar)
+   */
+  document.querySelectorAll('#customSidebar .custom-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const header = document.querySelector('#header');
+      const toggleBtn = document.querySelector('.header-toggle');
+      if (header.classList.contains('header-show')) {
+        header.classList.remove('header-show');
+        toggleBtn.classList.remove('bi-x');
+        toggleBtn.classList.add('bi-list');
+      }
+    });
+  });
+
 
   /**
    * Toggle mobile nav dropdowns
@@ -291,10 +306,10 @@ window.addEventListener('scroll', () => {
     // Αντίστροφο λογικό για το switch
     const savedLang = localStorage.getItem("selectedLang") || "en";
     loadTranslations(savedLang);
-    langToggle.checked = savedLang === "gr"; // Αν gr, τότε switch ON (δεξιά)
+    langToggle.checked = savedLang === "en"; // Αν gr, τότε switch ON (δεξιά)
   
     langToggle?.addEventListener("change", () => {
-      const lang = langToggle.checked ? "gr" : "en"; //Αν ON → Ελληνικά
+      const lang = langToggle.checked ? "en" : "gr"; //Αν ON → Ελληνικά
       loadTranslations(lang);
     });
   });

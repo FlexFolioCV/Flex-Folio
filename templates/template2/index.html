@@ -48,6 +48,16 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KR78LLXE0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-9KR78LLXE0');
+    </script>
 </head>
 
 
@@ -62,76 +72,47 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <!--<button class="secretButton" onclick="window.location.href='resume-bootstrap4-master/index.html'">
-          Secret
-        </button>-->
-        <li>
-          <a href="#hero" class="active">
-            <i class="bi bi-house navicon"></i>
-            <span data-i18n="home_section_title">Home</span>
+        <nav id="customSidebar" class="custom-sidebar">
+      <ul class="custom-nav-list">
+        <li class="custom-nav-item">
+          <a href="#hero" class="custom-nav-link active">
+            <i class="bi bi-house"></i>
+            <span data-i18n="home_section_title">Αρχική</span>
           </a>
         </li>
-        
-        <li>
-          <a href="#about">
-            <i class="bi bi-person navicon"></i>
-            <span data-i18n="about_section_title">About</span>
+        <li class="custom-nav-item">
+          <a href="#about" class="custom-nav-link">
+            <i class="bi bi-person"></i>
+            <span data-i18n="about_section_title">Σχετικά</span>
           </a>
         </li>
-        
-        <li>
-          <a href="#skills">
-            <i class="bi bi-tools navicon"></i>
-            <span data-i18n="skills_section_title">Skills</span>
+        <li class="custom-nav-item">
+          <a href="#skills" class="custom-nav-link">
+            <i class="bi bi-tools"></i>
+            <span data-i18n="skills_section_title">Δεξιότητες</span>
           </a>
         </li>
-        
-        <li>
-          <a href="#resume">
-            <i class="bi bi-file-earmark-text navicon"></i>
-            <span data-i18n="resume_section_title">Resume</span>
+        <li class="custom-nav-item">
+          <a href="#resume" class="custom-nav-link">
+            <i class="bi bi-file-earmark-text"></i>
+            <span data-i18n="resume_section_title">Βιογραφικό</span>
           </a>
         </li>
-        
-        <a href="#portfolio">
-          <i class="bi bi-collection navicon"></i>
-          <span data-i18n="portfolio_section_title">Portfolio</span>
-        </a>
-        
-        
-        <li class="dropdown">
-          <a href="#contact" class="d-flex align-items-center justify-content-between">
-            <span>
-              <i class="bi bi-envelope navicon"></i>
-              <span data-i18n="contact_section_title">Contact</span>
-            </span>
-            <i class="bi bi-chevron-down toggle-dropdown"></i>
+        <li class="custom-nav-item">
+          <a href="#portfolio" class="custom-nav-link">
+            <i class="bi bi-collection"></i>
+            <span data-i18n="portfolio_section_title" >Portfolio</span>
           </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="https://t.me/Georgechrp" target="_blank">
-                <i class="bi bi-telegram navicon"></i> Telegram
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Georgechrp" target="_blank">
-                <i class="bi bi-github navicon"></i> GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/georgechrp" target="_blank">
-                <i class="bi bi-linkedin navicon"></i> LinkedIn
-              </a>
-            </li>
-          </ul>
         </li>
-        
-        
+        <li class="custom-nav-item">
+          <a href="#contact" class="custom-nav-link">
+            <i class="bi bi-envelope"></i>
+            <span data-i18n="contact_section_title">Επικοινωνία</span>
+          </a>
+        </li>
       </ul>
-      
     </nav>
+
     <div class="lang-toggle-wrapper fixed-lang-toggle" >
       <span class="lang-label">GR</span>
       <label class="lang-switch">
@@ -282,11 +263,11 @@ I enjoy working in <strong>dynamic environments</strong> where I can solve probl
           <!-- Left Column -->
           <div class="col-lg-3" data-aos="fade-up">
               <div class="list-group">
-                <a class="list-group-item list-group-item-action active" data-i18n-html="programming_languages">💻 Programming Languages</a>
-                <a class="list-group-item list-group-item-action disabled"> Java</a>
+                <a class="list-group-item list-group-item-action active" data-i18n-html="programming_languages">Programming Languages</a>
                 <a class="list-group-item list-group-item-action disabled"> Kotlin</a>
-                <a class="list-group-item list-group-item-action disabled"> C#</a>
+                <a class="list-group-item list-group-item-action disabled"> Java</a>
                 <a class="list-group-item list-group-item-action disabled"> Python</a>
+                <a class="list-group-item list-group-item-action disabled"> C#</a>
                 <a class="list-group-item list-group-item-action disabled"> JavaScript</a>
                 <a class="list-group-item list-group-item-action disabled"> HTML</a>
                 
@@ -296,39 +277,33 @@ I enjoy working in <strong>dynamic environments</strong> where I can solve probl
           <!-- Right Column -->
           <div class="col-lg-3" data-aos="fade-up">
               <div class="list-group">
-                <a class="list-group-item list-group-item-action active" data-i18n-html="databasestools">🗄️ Databases & Tools</a>
+                <a class="list-group-item list-group-item-action active" data-i18n-html="databasestools">Database Management</a>
                 <a class="list-group-item list-group-item-action disabled"> Firebase</a>
-                <a class="list-group-item list-group-item-action disabled"> SQL</a>
-                <a class="list-group-item list-group-item-action disabled"> Room Database</a>
-                <a class="list-group-item list-group-item-action disabled"> IntelliJ IDEA</a>
-                <a class="list-group-item list-group-item-action disabled"> PyCharm</a>
-                <a class="list-group-item list-group-item-action disabled"> Git</a> 
+                <a class="list-group-item list-group-item-action disabled"> MySQL</a>
+                <a class="list-group-item list-group-item-action disabled"> SQL Server</a>
+                <a class="list-group-item list-group-item-action disabled"> PostgreSQL</a>
               </div>
           </div>
 
           <!-- Third Column -->
           <div class="col-lg-3" data-aos="fade-up">
               <div class="list-group">
-                <a class="list-group-item list-group-item-action active" data-i18n-html="frameworkslibraries">📚 Frameworks & Libraries</a>
-                <a class="list-group-item list-group-item-action disabled"> Jetpack Compose</a>
-                <a class="list-group-item list-group-item-action disabled"> Navigation Component</a>
-                <a class="list-group-item list-group-item-action disabled"> LiveData</a>
-                <a class="list-group-item list-group-item-action disabled"> Coroutines</a>
-                <a class="list-group-item list-group-item-action disabled"> NumPy</a>
-                <a class="list-group-item list-group-item-action disabled"> Matplotlib</a>
+                <a class="list-group-item list-group-item-action active" data-i18n-html="frameworkslibraries">Computer Science Tools</a>
+                <a class="list-group-item list-group-item-action disabled"> Android Studio</a>
+                <a class="list-group-item list-group-item-action disabled"> InteliJ</a>
+                <a class="list-group-item list-group-item-action disabled"> PyCharm</a>
+                <a class="list-group-item list-group-item-action disabled"> Git</a>
+                <a class="list-group-item list-group-item-action disabled"> Terminal</a>
                 
               </div>
           </div>
 
           <div class="col-lg-3" data-aos="fade-up">
             <div class="list-group">
-              <a class="list-group-item list-group-item-action active" data-i18n-html="other_skills_title">💬 Soft Skills</a>
-              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_teamwork">Teamwork</a>
-              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_communication">Communication</a>
-              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_version_control">Version Control</a>
-              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_creativity">Creativity</a>
-              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_responsibility">Responsibility</a>
-              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_learning">Continuous Learning</a>
+              <a class="list-group-item list-group-item-action active" data-i18n-html="other_skills_title">Others</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_teamwork">XML</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_communication">Microsoft Office</a>
+              <a class="list-group-item list-group-item-action disabled" data-i18n="skill_version_control">Docker</a>
 
             </div>
         </div>
@@ -458,7 +433,7 @@ I enjoy working in <strong>dynamic environments</strong> where I can solve probl
                   <!-- Android App Project -->
                   <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
 
-                    <a href="https://github.com/Georgechrp/ChordsHub-Android-App" target="_blank" class="portfolio-box">
+                    <a href="assets/mythesis/index.html" target="_blank" class="portfolio-box">
                         <i class="fa-brands fa-android"></i>
                         <h4>Android App(Thesis)</h4>
                         <span > Kotlin, Jetpack Compose</span>
@@ -655,7 +630,7 @@ I enjoy working in <strong>dynamic environments</strong> where I can solve probl
 
    <div class="container">
   <div class="copyright text-center">
-    <p>© <strong class="px-1 sitename">Georgechrp</strong> <span id="year"></span></p>
+    <p>© <strong class="px-1 sitename">George Christopoulos</strong> <span id="year"></span></p>
   </div>
   <!--<div class="credits">
     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
@@ -690,6 +665,17 @@ I enjoy working in <strong>dynamic environments</strong> where I can solve probl
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+      document.querySelectorAll('.custom-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const sidebar = document.getElementById('customSidebar');
+          sidebar.classList.remove('open'); // ή 'active' ή ό,τι χρησιμοποιείς
+        });
+      });
+  </script>
+
 
 </body>
 
