@@ -47,6 +47,9 @@ async function setLanguage(lang) {
     safeSetPlaceholder("form-bio", t.form_bio);
     safeSetPlaceholder("form-purpose", t.form_purpose);
     safeSetText("form-submit", t.form_submit);
+    safeSetText("step1", t.step1);
+    safeSetText("step2", t.step2);
+    safeSetText("step3", t.step3);
 
     // Όλα τα buttons επιλογής
     document.querySelectorAll(".choose-btn").forEach(btn => {
